@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/stylegeral.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <a id="top"></a>
+    <header>       
+        <nav>
+            <div class="header-options">
+                <a href="home.html"> 
+                    <img src="Imagens/logo.jpg" alt="Logo" width="70" height="70">
+                </a>
+                <a href="home.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="dicas.html">Dicas</a>
+                <a href="contato.html">Contato</a>
+            </div>   
+        </nav>
+    </header>
+</header>
+
+  <main>
+    <section class="contact-form">
+      <h1>Entre em contato</h1>
+      <h2>Envie sua mensagem preenchendo o formulário abaixo.</h2>
+      <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <br><br>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+        <br><br>
+        <label for="option">Selecione uma opção:</label><br>
+        <select name="option" id="option">
+          <option value="empresa">Empresa</option>
+          <option value="voluntario">Voluntário</option>
+          <option value="doacoes">Doações</option>
+        </select>
+        <br><br>
+        <label for="comentario">Sua Mensagem</label><br>
+        <textarea id="comentario" name="comentario" placeholder="Digite sua mensagem"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <div id="map"></div>
+  <section class="relationship-channel">
+    <h2>Canal de Relacionamento</h2>
+    <h3> 0800-570-0001</h3>
+  </section>
+  <footer>
+    <nav>
+        <div class="footer-link">
+            <a href="home.html" class="footer-logo">Sabor Solidário</a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+        <p>© 2024 Sabor Solidário - Todos os direitos reservados.</p>
+    </nav>
+</footer>
+<a href="#top" class="back-to-top">Voltar ao topo</a>
+</body>
+
+</html>
