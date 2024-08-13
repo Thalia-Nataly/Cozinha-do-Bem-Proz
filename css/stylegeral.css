@@ -1,0 +1,494 @@
+.logo img {
+    display: block;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    text-align: left;
+    margin-right: auto;
+}
+
+body {
+    background-color: rgb(32, 143, 176);
+    background-repeat: no-repeat, repeat;
+    background-attachment: scroll, fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+main {
+    width: auto;
+    padding: 16px;
+    margin: auto;
+    align-items: center;
+}
+
+#Quem {
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+#Sobre {
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+#Como {
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    list-style-type: none;
+}
+
+
+section div img {
+
+    text-align: center;
+    border-radius: 50px;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    image-orientation: from-image;
+}
+
+
+
+.botao {
+    border: solid 1px blue;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    box-shadow: #05023d;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    align-items: right;
+
+
+}
+
+.botao:hover {
+    background-color: rgb(19, 112, 188);
+    color: white;
+    transform: scale(1.2)
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+
+
+}
+
+#conteudo {
+    height: auto;
+    background-color: #7ad4ed24;
+    box-sizing: border-box;
+    width: 1000px;
+    border-radius: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    list-style-type: none;
+    align-items: center;
+}
+
+#list {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+#conteudo h1 {
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 40px;
+    text-align: center;
+}
+
+#conteudo h2 {
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+#Quemp {
+    width: 500px;
+    height: 1px;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+#conteudo-left {
+    width: 500px;
+    height: 400px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+#conteudo-rigth {
+    width: 350px;
+    height: 400px;
+    float: right;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    image-orientation: from-image;
+}
+
+#copywrite {
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/*Dicas */
+/* Cabeçalho */
+body, h1, h3, p, ul, li, a, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4799eb;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-options {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-options img {
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.header-options a {
+    text-decoration: none; 
+    color: #ffffff; 
+    margin-left: 15px; 
+    font-family: Arial, sans-serif; 
+}
+
+.header-options a:hover {
+    color: #000000; 
+}
+
+.main-content {
+    width: 1000%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #7ad4ed24;
+    border-radius: 8px;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    
+}
+
+.main-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+}
+
+.main-content ul {
+    margin-bottom: 20px;
+}
+
+.main-content ul li {
+    margin-bottom: 10px;
+}
+
+.main-content img {
+    display: block;
+    margin: 10px 0;
+}
+
+
+
+/* Main */
+.content-container {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 15px;
+    max-width: 1000px; 
+    margin-bottom: 50px;
+}
+
+.text-box1 {
+    flex: 1; 
+    border-radius: 8px; 
+    padding: 20px; 
+    background-color:#aae5e8;
+    box-sizing: border-box; 
+    max-width: 2000px; 
+    height: 500px; 
+
+}
+
+.text-box2 {
+    flex: 1;  
+    border-radius: 8px; 
+    padding: 20px; 
+    background-color:#dbaaa3;
+    box-sizing: border-box; 
+    max-width: 2000px; 
+    height: 500px; 
+
+}
+
+.text-box3 {
+    flex: 1;  
+    border-radius: 8px; 
+    padding: 20px; 
+    background-color:#f7e7b2;
+    box-sizing: border-box; 
+    max-width: 2000px; 
+    height: 500px; 
+
+}
+
+.image-box {
+    flex: 1; 
+    max-width: 2000px; 
+    height: 450px;  
+    border-radius: 8px; 
+}
+
+.image-box img {
+    width: 95%; 
+    height: 95%; 
+}
+
+.chips-container {
+    background-color:#aae5e8; 
+    border-radius: 1%;
+}
+
+.arroz-container {
+    background-color: #dbaaa3; 
+    border-radius: 1%;
+}
+
+.pizza-container {
+    background-color: #f7e7b2; 
+    border-radius: 1%;
+}
+
+
+
+
+
+
+/* Formulário*/
+.form-container {
+    background-color: #7ad4ed24; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    display: block; 
+    margin-top: 50px;
+}
+
+.form-container input,
+.form-container button {
+    display: block; 
+    width: 97%; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border-radius: 4px; 
+    border: 1px solid #ddd; 
+    box-sizing: border-box; 
+}
+
+.form-container button {
+    background-color:#4799eb; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.form-container button:hover {
+    background-color: #0056b3; 
+}
+
+
+
+
+
+/* Footer */
+/* Palavra "Sabor Solidário" */
+.footer-logo {
+    font-size: 24px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #ffffff; 
+}
+
+.footer-logo:hover {
+    color: #000000; 
+}
+
+
+footer {
+    background-color:#4799eb;
+    padding: 8px;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-link {
+    margin-bottom: 10px; 
+}
+
+footer .social-links {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 10px; 
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .social-links img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle
+}
+
+footer .redes {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 10px;
+} 
+
+ul.redes img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+
+footer .social-links a:hover {
+    color: #000000; 
+}
+
+footer p {
+    font-size: 0.8em;
+    color:#ffffff;
+    margin-top: 0; 
+}
+
+
+
+
+/* Botão "Voltar ao topo" */
+.back-to-top {
+    position: fixed;
+    bottom: 10px; 
+    bottom: 33px;
+    right: 20px; 
+    background-color: #ffffff; 
+    color: #0056b3; 
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+    border: 2px solid #0056b3;
+    
+}
+
+.back-to-top:hover {
+    background-color:#0056b3;
+    color: #ffffff;
+}
