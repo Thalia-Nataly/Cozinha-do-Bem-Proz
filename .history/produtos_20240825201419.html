@@ -115,23 +115,19 @@
                     <br>
                     <p>Preencha o formulário para receber nosso e-book, e poderá conhecer um pouco mais da nossa história, locais em que já atuamos, depoimentos de pessoas que recebem o seu alimento e mais receitas de reaproveitamento inteligente.</p>
                     <br>
-                    <div class="input">
+                    <div class="input</div>
                     <label for="nome">Nome: </label>
-                    <input required type="text" name="nome" id="nome" >
-                    <span  class="error"></span>
-                    </div>
-                    
-                    <div class="input">
-                    <label for="email">E-mail: </label>
-                    <input required type="email" name="email" id="email">
-                    <span  class="error"></span>
-                    </div>
+                    <input type="text" name="nome" id="nome" required>
+                    <span id="mensagemNome" class="error"></span>
 
-                    <div class="input">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" required>
+                    <span id="mensagemEmail" class="error"></span>
+
                     <label for="tel">Telefone: </label>
-                    <input required type="tel" name="tel" id="tel">
-                    <span class="error"></span>
-                    </div>
+                    <input type="tel" name="tel" id="tel" required>
+                    <span id="mensagemTel" class="error"></span>
+                    
 
                     <button type="submit">Enviar</button>
                 </form>

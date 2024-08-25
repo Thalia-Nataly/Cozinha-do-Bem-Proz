@@ -105,4 +105,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
     form.addEventListener("submit", validateForm);
 });
-// formulario de contato//

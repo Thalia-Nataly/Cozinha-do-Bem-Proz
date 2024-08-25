@@ -514,7 +514,7 @@ section.hero-site {
 }
 
 /* Style para o contêiner de detalhes do contato e formulário */
-.contact-details-form-container, .form-container .form-prodcontainer {
+.contact-details-form-container {
     display: flex;
     justify-content: space-between; /* Espaçamento automático para as colunas */
     width: 100%;
@@ -523,14 +523,14 @@ section.hero-site {
 }
 
 /* Style para os detalhes de contato e formulário */
-.contact-details, .form-container .form-prodcontainer {
+.contact-details, .form-container .form-produtos {
     display: flex;
     flex-direction: column;
     gap: 50px;
     width: 500px; /* Largura fixa para ambas as colunas (sem considerar o form) */
     box-sizing: border-box;
 }
-/* Formulário*/
+/* Formulário produto*/
 .form-container {
     background-color: #7ad4ed24;
     border: 1px solid #ddd;
@@ -583,7 +583,7 @@ section.hero-site {
     display: block;
     margin-left: 80px; /* Adicionar espaço à esquerda do form */
 }
-/* Formulário produto*/
+/*
 .form-prodcontainer {
     width: 1000%;
     max-width: 1000px;
@@ -607,8 +607,6 @@ section.hero-site {
   
     
 }
-
-/*----------------------------------------------------------------*/
 
 /* Style dos campos de entrada e botão dentro do form */
 .form-container input,
@@ -711,7 +709,7 @@ section.hero-site {
     width: 800px;
     text-align: justify;
     display: block;
-    padding: 30px;
+
     align-self: center;
     flex-direction: left;
 }

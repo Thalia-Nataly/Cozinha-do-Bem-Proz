@@ -514,7 +514,8 @@ section.hero-site {
 }
 
 /* Style para o contêiner de detalhes do contato e formulário */
-.contact-details-form-container, .form-container .form-prodcontainer {
+.contact-details, .form-container .form-prodcontainer {
+    .contact-details-form-container {
     display: flex;
     justify-content: space-between; /* Espaçamento automático para as colunas */
     width: 100%;

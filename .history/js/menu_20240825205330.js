@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
     const fields = form.querySelectorAll("[required]");
     const contactPreference = document.getElementById("contact-preference");
-    const nomeField = document.getElementById("nome");
 
     // Função para validar cada campo individualmente
     function validateField(field) {
@@ -44,12 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
             showError(field, "Por favor, preencha este campo.");
             return false;
         }
-
         // Verificar se o nome tem menos de 3 letras
         if (field === nomeField && field.value.length < 3) {
             showError(field, "O nome deve ter mais de 3 letras.");
             return false;
-        }
 
         // Verificar e-mail válido
         if (field.type === "email" && field.validity.typeMismatch) {
@@ -105,4 +102,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
     form.addEventListener("submit", validateForm);
 });
-// formulario de contato//
