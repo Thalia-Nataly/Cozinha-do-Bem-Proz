@@ -1,0 +1,740 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*----------------------------------------------------------------*/
+/*media queries para ajustar o layout em diferentes tamanhos de tela.*/
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+}
+
+/*----------------------------------------------------------------*/
+body {
+    background-repeat: no-repeat, repeat;
+    background-attachment: scroll, fixed;
+    background-size: cover;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+/*----------------------------------------------------------------*/
+
+/*PRODUTOS */
+/* Cabeçalho */
+
+main {
+
+    margin-top: 60px;
+}
+
+.main-content {
+    width: 1000%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(122, 223, 189, 0.153);
+    border-radius: 8px;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    padding: 50px;
+
+}
+
+.main-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+}
+
+.main-content ul {
+    margin-bottom: 20px;
+}
+
+.main-content ul li {
+    margin-bottom: 10px;
+}
+
+.main-content img {
+    display: block;
+    margin: 10px 0;
+}
+
+
+
+/* Main */
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.text-box1 .text-box2 .text-box3 {
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 2000px;
+    height: 650px;
+}
+
+.text-box1 {
+    background-color: #aae5e8;
+    flex: 1;
+}
+
+.text-box2 {
+    background-color: #dbaaa3;
+    flex: 1;
+}
+
+.text-box3 {
+    background-color: #f7e7b2;
+    flex: 1;
+}
+
+.image-box {
+    flex: 1;
+    max-width: 300px;
+    height: 300px;
+}
+
+.image-right img {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+.image-box img {
+    width: 98%;
+    height: 98%;
+    border-radius: 8px;
+    box-shadow: #000000;
+    align-content: center;
+}
+
+.chips-container {
+    background-color: #aae5e8;
+    border-radius: 1%;
+}
+
+.arroz-container {
+    background-color: #dbaaa3;
+    border-radius: 1%;
+}
+
+.pizza-container {
+    background-color: #f7e7b2;
+    border-radius: 1%;
+}
+
+/*----------------------------------------------------------------*/
+/* Formulário produto*/
+.form-container {
+    background-color: #7ad4ed24;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.form-container input,
+.form-container button {
+    display: block;
+    width: 97%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background-color: #4799eb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+
+/*----------------------------------------------------------------*/
+
+
+/* Footer GERAL */
+footer {
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-logo:hover {
+    color: #000000;
+}
+
+
+footer {
+    background-color: transparent;
+    padding: 8px;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-link {
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .social-links img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle
+}
+
+footer .redes {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+ul.redes img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    list-style-type: none;
+}
+
+
+footer .social-links a:hover {
+    color: #000000;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.copyright {
+    align-items: center;
+    text-align: center;
+    background-color: rgba(122, 223, 189, 0.293);
+    color: rgb(3, 64, 5);
+}
+
+/*----------------------------------------------------------------*/
+
+/* Botão "Voltar ao topo" */
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    bottom: 33px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #0ba22f;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border: 2px solid #047110;
+
+}
+
+.back-to-top:hover {
+    background-color: #047110;
+    color: #ffffff;
+}
+
+/*----------------------------------------------------------------*/
+/* Home video*/
+
+
+.banner {
+    width: 100%;
+    height: 98vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 98vh;
+    z-index: -1;
+
+}
+
+/*----------------------------------------------------------------*/
+
+/*navbar*/
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .btn-contato button:hover {
+    background-color: #078d07;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo do Header */
+header {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transition: .5s;
+    z-index: 5;
+}
+
+header .interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+header .logo img {
+    max-width: 40px;
+
+
+}
+
+/* ---------------------------------------------------------------- */
+/* Estilo do Menu */
+
+header .logo img.logo-preto {
+    display: none;
+}
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header .menu-desktop nav ul li a {
+    color: #033915;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.05);
+}
+
+header .btn-contato,
+button .botaosaiba button {
+    width: 90px;
+    height: 4%;
+}
+
+header .btn-contato button,
+.hero-site button,
+.botaosaiba button {
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #038d5acb;
+    color: #171616;
+    cursor: pointer;
+    transition: .5s;
+}
+
+header .btn-contato button:hover,
+.hero-site button:hover {
+    background-color: #165850;
+    color: #fbfffd;
+
+}
+
+header.rolar {
+    background-color: #02484691;
+    padding: 10px 0;
+    box-shadow: 0 0 8px #0bb8a772;
+
+}
+
+header.rolar .menu-desktop nav ul li a {
+    color: #ffffff;
+}
+
+header.rolar .btn-contato button:hover {
+    background-color: #036047;
+    color: #ebf5f4;
+}
+
+header.rolar .logo img.logo-branca {
+    display: none;
+}
+
+header.rolar .logo img.logo-preto {
+    display: block;
+}
+
+/*Hero-site*/
+section.hero-site {
+    height: 100vh;
+    color: black;
+}
+
+.hero-site .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.hero-site .txt-hero {
+    background-color: rgba(122, 223, 189, 0.153);
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 4em;
+    font-weight: 200;
+}
+
+.hero-site .txt-hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 25px 0;
+}
+
+.hero-site .txt-hero p span {
+    display: block;
+}
+
+.hero-site button,
+.box-img button {
+    width: 200px;
+    height: 50px;
+}
+
+/* C O N T A T O    P Á G I N A   I N Í C I O*/
+/* Contêiner principal de contato */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre os elementos */
+}
+
+
+/* Contêiner que contém o telefone e o WhatsApp */
+.contact-info-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px; /* Diminuir o espaço entre o WhatsApp e a linha de cima */
+}
+
+/* Ainhamento entre o telefone e o WhatsApp na mesma linha */
+.contact-info {
+    display: flex;
+    gap: 50px; /* Espaçamento entre o telefone e WhatsApp */
+}
+
+/* Style para o telefone e o WhatsApp */
+.contact-box {
+    border-radius: 8px;
+    padding: 20px; /* AAjustar o ícone e o texto */
+    box-sizing: border-box;
+    text-align: center;
+    width: 525px; /* Ajustar a largura */
+    background-color: rgba(122, 223, 189, 0.153);
+    border: 2px solid #038d5a27;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Box telefone */
+.phone-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ícone telefone */
+.contact-icon {
+    width: 50px; /* Ajustar tamanho */
+    height: auto;
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+/* Style para o título e o texto na caixa de telefone */
+.phone-box h2 {
+    margin: 10px 0;
+}
+
+.phone-box p {
+    margin: 0;
+}
+
+/* Style para a caixa do WhatsApp */
+.whatsapp-box {
+    text-align: center;
+}
+
+/* Style para o contêiner de detalhes do contato e formulário */
+.contact-details-form-container {
+    display: flex;
+    justify-content: space-between; /* Espaçamento automático para as colunas */
+    width: 100%;
+    max-width: 1100px; /* Largura máxima das colunas */
+    margin-top: 20px; /* Espaço de cima contêiner */
+}
+
+/* Style para os detalhes de contato e formulário */
+.contact-details, .form-container .form-produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 500px; /* Largura fixa para ambas as colunas (sem considerar o form) */
+    box-sizing: border-box;
+}
+
+/* Style para o formulário */
+.form-container 
+{
+    margin-top: 10px; /* Diminuir o espaço entre o form e a linha de cima */
+    height: auto; /* Altura do conteúdo */
+    background-color: rgba(122, 223, 189, 0.153);
+    border: 2px solid #038d5a27;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    margin-left: 80px; /* Adicionar espaço à esquerda do form */
+}
+.form-prodcontainer {
+    width: 1000%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(122, 223, 189, 0.153);
+    border-radius: 8px;
+}
+.form-produtos {
+    margin-top: 10px; /* Diminuir o espaço entre o form e a linha de cima */
+    height: auto; /* Altura do conteúdo */
+    background-color: rgba(122, 223, 189, 0.153);
+    border: 2px solid #038d5a27;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 1000px;
+    
+  
+    
+}
+
+/* Style dos campos de entrada e botão dentro do form */
+.form-container input,
+.form-container select,
+.form-container button 
+.form-produtos input,
+.form-produtos select,
+
+{
+    display: block;
+    width: 97%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #cccccc; /* Cor da borda dos campos */
+    box-sizing: border-box;
+}
+
+/* Estilo do botão dentro do form */
+.form-container button 
+.form-produtos form button {
+    background-color: #ffffff;
+    color: #047110;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #00000027;
+}
+
+.form-container button:hover 
+.form-produtos form button:hover {
+    background-color: #047110;
+    color: #ffffff;
+}
+
+
+
+/*----------------------------------------------------------------*/
+/* Boxes */
+.box-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.box-conteiners {
+
+    padding: 20px;
+    max-width: auto;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+
+
+
+}
+
+
+.box-content {
+
+    width: 800px;
+    height: 300px;
+    background-color: rgba(122, 223, 189, 0.153);
+    border: 2px solid #038d5a27;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    border-start-start-radius: 30%;
+    border-start-end-radius: 10%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+
+
+
+
+}
+
+.box-content h1 {
+    width: 800px;
+    display: flex;
+    margin-top: 20px;
+    align-self: center;
+    padding: 20px;
+
+}
+
+.box-content p {
+    width: 800px;
+    text-align: justify;
+    display: block;
+
+    align-self: center;
+    flex-direction: left;
+}
+
+
+.box-img {
+
+    width: 250px;
+    height: auto;
+    align-self: center;
+    padding: 20px;
+
+
+
+}
+
+.box-img img {
+    border-radius: 20%;
+
+}
+
+.box-sobre {
+    
+    width: 800px;
+    height: auto;
+    padding: 20px;
+    order: 1;
+    border-end-end-radius: 10%;
+    border-start-end-radius: 10%;
+  
+
+
+}
+
+.botaosaiba {
+    display: flex;
+    align-self: center;
+    flex-direction: center;
+    order: 1;
+
+}

@@ -1,0 +1,35 @@
+
+//cor do menu mudar quando rolar p baixo//
+let navBar = document.querySelector('#header');
+
+document.addEventListener('scroll', ()=>{
+    let scrollTop = window.scrollY;
+    if(scrollTop > 0){
+        navBar.classList.add('rolar');
+    }else{
+        navBar.classList.remove('rolar');
+    }
+
+} )
+
+// botao voltar ao topo apenas aparecer quando rolar p baixo//
+window.onscroll = function() {
+    var topButton = document.querySelector('.back-to-top');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.style.display = "block";
+    } else {
+        topButton.style.display = "none";
+    }
+};
+
+// formulario de contato//
+O required ja vai fazer isso pra você, não vai deixar você enviar sem preencher o input, mas, com JS você pode verificar se o value está vazio:
+
+function ValidarFormulario(id){
+  const idForm = document.getElementById(id).getAttribute('id');
+  document.querySelectorAll('#' + idForm + ' input').forEach(function(a){
+      if(a.value.length < 1 && a.hasAttribute('required')) {
+          console.log('Por favor, preencha todos os campos!');
+      }
+  });
+}
