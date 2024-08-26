@@ -19,6 +19,7 @@
 }
 
 /*----------------------------------------------------------------*/
+
 body {
     background-repeat: no-repeat, repeat;
     background-attachment: scroll, fixed;
@@ -29,6 +30,8 @@ body {
     box-sizing: border-box;
 
 }
+
+
 
 /*----------------------------------------------------------------*/
 
@@ -290,6 +293,7 @@ footer p {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;
 }
 
 header .btn-contato button:hover {
@@ -309,14 +313,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-
     transition: .5s;
     z-index: 5;
 }
 
 header .interface {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: transparent;
 
@@ -366,7 +369,9 @@ header .btn-contato button,
 .botaosaiba button {
     font-size: 18px;
     background-color: transparent;
-    border: transparent;
+    border:#036047 solid;
+    border-radius: 8px;
+    border-width: 1px;
     color: #171616;
     cursor: pointer;
     transition: .5s;
@@ -427,9 +432,9 @@ section.hero-site {
 
 }
 
-.hero-site .txt-hero h1 {
-    font-size: 4em;
-    font-weight: 200;
+.hero-site .txt-hero h1 p{
+    font-size: 2em;
+    font-weight: 300;
 }
 
 .hero-site .txt-hero p {
@@ -450,6 +455,7 @@ section.hero-site {
 }
 
 /* C O N T A T O    P Á G I N A */
+/* C O N T A T O    P Á G I N A   I N Í C I O*/
 /* Contêiner principal de contato */
 .contact-container {
     display: flex;
