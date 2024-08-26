@@ -255,31 +255,30 @@
         </div>
 
          <!-- Formulário -->
-<div class="form-container-wrapper">
-    <div class="form-container">
-        <form>
-            <h3>Gostaria de pedir algum produto?</h3>
-            <p>Preencha o formulário e um de nossos vendedores entrará em contato com você!</p>
-            <label for="nome">Nome: </label>
-            <input required type="text" name="nome" id="nome" >
+         <div class="form-container">
+            <form>
+                <h3>Compre online diretamente com um de nossos vendedores</h3>
+                <p>Preencha o formulário e um de nossos vendedores entrará em contato com você pelo meio de contato escolhido </p>
+                <label for="nome">Nome: </label>
+                <input required type="text" name="nome" id="nome" >
 
-            <label for="email">E-mail: </label>
-            <input required type="email" name="email" id="email" >
+                <label for="email">E-mail: </label>
+                <input required type="email" name="email" id="email" >
 
-            <label for="tel">WhatsApp: </label>
-            <input type="tel" name="tel" id="tel" required>
+                <label for="tel">WhatsApp: </label>
+                <input type="tel" name="tel" id="tel" required>
 
-            <label for="contact-preference">Qual forma de contato você prefere?</label>
-            <select id="contact-preference" name="contact-preference" required>
-                <option value="" disabled selected>Escolha uma opção</option>
-                <option value="call">Ligação</option>
-                <option value="whatsapp">Mensagem no WhatsApp</option>
-            </select>
+                <label for="contact-preference">Qual forma de contato você prefere?</label>
+                <select id="contact-preference" name="contact-preference" required>
+                    <option value="" disabled selected>Escolha uma opção</option> <!-- Opção vazia que obrigará o usuário a escolher uma das opções abaixo -->
+                    <option value="call">Ligação</option>
+                    <option value="whatsapp">Mensagem no WhatsApp</option>
+                </select>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</div>
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
     </main>
 
     
