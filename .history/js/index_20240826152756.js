@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Verificar telefone válido
         if (field.type === "tel" && !/^\d{10,11}$/.test(field.value)) {
-            showError(field, "Por favor, insira um número válido com até 11 dígitos.");
+            showError(field, "Por favor, insira um número de telefone válido com 10 ou 11 dígitos.");
             return false;
         }
 

@@ -30,6 +30,8 @@ body {
 
 }
 
+
+
 /*----------------------------------------------------------------*/
 
 /*PRODUTOS */
@@ -82,76 +84,72 @@ main {
 
 
 /* Main */
-/* Container principal dos produtos */
 .content-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que as colunas se movam conforme necessário */
-    gap: 20px; /* Espaçamento entre colunas e produtos */
-    justify-content: space-between; /* Distribui as colunas uniformemente */
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.text-box1 .text-box2 .text-box3 {
+    border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
+    max-width: 2000px;
+    height: 650px;
 }
 
-/* Coluna de produtos */
-.product-column {
-    flex: 1; /* Faz com que cada coluna tenha a mesma largura */
-    min-width: calc(33.33% - 20px); /* Garante que as colunas tenham o mesmo tamanho e se ajustem ao espaço disponível */
+.text-box1 {
+    background-color: #aae5e8;
+    flex: 1;
 }
 
-/* Caixa de produto */
-.product {
-    background-color: #fff; /* Cor de fundo para a caixa de produto */
-    border: 1px solid #ddd; /* Borda fina ao redor da caixa */
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 15px; /* Espaço interno */
-    box-sizing: border-box;
-    margin-bottom: 20px; /* Espaço entre produtos */
-    text-align: center; /* Centraliza o texto e a imagem */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para a caixa de produto */
-    height: 300px; /* Altura fixa para todas as caixas de produto */
+.text-box2 {
+    background-color: #dbaaa3;
+    flex: 1;
 }
 
-/* Imagem do produto */
-.product img {
-    width: 100%; /* Imagem ocupa toda a largura da caixa */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Cantos arredondados na imagem */
-    object-fit: cover; /* Faz com que a imagem cubra a caixa sem distorcer */
+.text-box3 {
+    background-color: #f7e7b2;
+    flex: 1;
 }
 
-/* Títulos dos produtos */
-.product h2 {
-    margin: 10px 0; /* Espaço acima e abaixo do título */
-    font-size: 1.2em; /* Tamanho do texto do título */
+.image-box {
+    flex: 1;
+    max-width: 300px;
+    height: 300px;
 }
 
-/* Descrições dos produtos */
-.product p {
-    margin: 0; /* Remove margem da descrição */
-    font-size: 0.9em; /* Tamanho do texto da descrição */
-    color: #666; /* Cor do texto da descrição */
+.image-right img {
+    float: right;
+    width: 200px;
+    height: 200px;
 }
 
-.centralize-text {
-    text-align: center;
-    margin: 20px auto;
-    font-size: 18px;
-
+.image-box img {
+    width: 98%;
+    height: 98%;
+    border-radius: 8px;
+    box-shadow: #000000;
+    align-content: center;
 }
 
-/* Ajustes responsivos */
-@media (max-width: 1200px) {
-    .product-column {
-        min-width: calc(50% - 20px); /* Em telas menores, duas colunas */
-    }
+.chips-container {
+    background-color: #aae5e8;
+    border-radius: 1%;
 }
 
-@media (max-width: 768px) {
-    .product-column {
-        min-width: 100%; /* Em telas ainda menores, uma coluna */
-    }
+.arroz-container {
+    background-color: #dbaaa3;
+    border-radius: 1%;
 }
 
+.pizza-container {
+    background-color: #f7e7b2;
+    border-radius: 1%;
+}
 
 /*----------------------------------------------------------------*/
 
@@ -453,7 +451,7 @@ section.hero-site {
     height: 50px;
 }
 
-/* C O N T A T O    P Á G I N A */
+/* C O N T A T O    P Á G I N A   I N Í C I O*/
 /* Contêiner principal de contato */
 .contact-container {
     display: flex;
@@ -479,6 +477,8 @@ section.hero-site {
 
 /* Style para o telefone e o WhatsApp */
 .contact-box {
+
+    margin-top: 15px;
     border-radius: 8px;
     padding: 20px; /* AAjustar o ícone e o texto */
     box-sizing: border-box;

@@ -35,13 +35,21 @@ body {
 /*PRODUTOS */
 /* Cabeçalho */
 
-main {
+/* Estilo geral do corpo */
+body {
+    font-family: 'Poppins', sans-serif; /* Atualize para a fonte desejada */
+    margin: 0;
+    padding: 0;
+}
 
+/* Estilo do Main */
+main {
     margin-top: 60px;
 }
 
+/* Main Content */
 .main-content {
-    width: 1000%;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 80px;
@@ -54,7 +62,6 @@ main {
 .main-content h1 {
     margin-bottom: 20px;
     padding: 50px;
-
 }
 
 .main-content h3 {
@@ -79,10 +86,59 @@ main {
     margin: 10px 0;
 }
 
+/* Centraliza o texto específico */
+.centralize-text {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #333; /* Cor do texto pode ser ajustada conforme necessário */
+}
 
+/* Cabeçalho */
+#header {
+    background-color: #f0f0f0; /* Ajuste a cor conforme o design */
+    padding: 10px 0;
+}
 
-/* Main */
-/* Container principal dos produtos */
+.interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-desktop ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-desktop ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: #333; /* Ajuste a cor conforme necessário */
+}
+
+.btn-contato button {
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-contato button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Seções de Produtos */
 .content-container {
     display: flex;
     flex-wrap: wrap; /* Permite que as colunas se movam conforme necessário */
@@ -132,13 +188,6 @@ main {
     color: #666; /* Cor do texto da descrição */
 }
 
-.centralize-text {
-    text-align: center;
-    margin: 20px auto;
-    font-size: 18px;
-
-}
-
 /* Ajustes responsivos */
 @media (max-width: 1200px) {
     .product-column {
@@ -150,6 +199,38 @@ main {
     .product-column {
         min-width: 100%; /* Em telas ainda menores, uma coluna */
     }
+}
+
+/* Rodapé */
+footer {
+    background-color: #f0f0f0; /* Ajuste a cor conforme o design */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+}
+
+/* Botão Voltar ao Topo */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
 }
 
 

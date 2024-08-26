@@ -132,13 +132,6 @@ main {
     color: #666; /* Cor do texto da descrição */
 }
 
-.centralize-text {
-    text-align: center;
-    margin: 20px auto;
-    font-size: 18px;
-
-}
-
 /* Ajustes responsivos */
 @media (max-width: 1200px) {
     .product-column {

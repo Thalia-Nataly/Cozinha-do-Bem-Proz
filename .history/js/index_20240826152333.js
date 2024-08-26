@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Verificar telefone válido
         if (field.type === "tel" && !/^\d{10,11}$/.test(field.value)) {
-            showError(field, "Por favor, insira um número válido com até 11 dígitos.");
+            showError(field, "Por favor, insira um número de telefone válido com 10 ou 11 dígitos.");
             return false;
         }
 
@@ -76,9 +76,11 @@ document.addEventListener("DOMContentLoaded", function() {
     function showError(field, message) {
         const error = document.createElement("span");
         error.classList.add("error-message");
-        error.style.color = "red";
         error.textContent = message;
         field.after(error);
+
+        // Força o redimensionamento do formulário
+        form.style.width = "auto";
     }
 
     // Função para validar todos os campos no formulário
@@ -105,4 +107,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     form.addEventListener("submit", validateForm);
 });
+
 // formulario de contato//

@@ -30,6 +30,8 @@ body {
 
 }
 
+
+
 /*----------------------------------------------------------------*/
 
 /*PRODUTOS */
@@ -82,76 +84,72 @@ main {
 
 
 /* Main */
-/* Container principal dos produtos */
 .content-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que as colunas se movam conforme necessário */
-    gap: 20px; /* Espaçamento entre colunas e produtos */
-    justify-content: space-between; /* Distribui as colunas uniformemente */
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.text-box1 .text-box2 .text-box3 {
+    border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
+    max-width: 2000px;
+    height: 650px;
 }
 
-/* Coluna de produtos */
-.product-column {
-    flex: 1; /* Faz com que cada coluna tenha a mesma largura */
-    min-width: calc(33.33% - 20px); /* Garante que as colunas tenham o mesmo tamanho e se ajustem ao espaço disponível */
+.text-box1 {
+    background-color: #aae5e8;
+    flex: 1;
 }
 
-/* Caixa de produto */
-.product {
-    background-color: #fff; /* Cor de fundo para a caixa de produto */
-    border: 1px solid #ddd; /* Borda fina ao redor da caixa */
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 15px; /* Espaço interno */
-    box-sizing: border-box;
-    margin-bottom: 20px; /* Espaço entre produtos */
-    text-align: center; /* Centraliza o texto e a imagem */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para a caixa de produto */
-    height: 300px; /* Altura fixa para todas as caixas de produto */
+.text-box2 {
+    background-color: #dbaaa3;
+    flex: 1;
 }
 
-/* Imagem do produto */
-.product img {
-    width: 100%; /* Imagem ocupa toda a largura da caixa */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Cantos arredondados na imagem */
-    object-fit: cover; /* Faz com que a imagem cubra a caixa sem distorcer */
+.text-box3 {
+    background-color: #f7e7b2;
+    flex: 1;
 }
 
-/* Títulos dos produtos */
-.product h2 {
-    margin: 10px 0; /* Espaço acima e abaixo do título */
-    font-size: 1.2em; /* Tamanho do texto do título */
+.image-box {
+    flex: 1;
+    max-width: 300px;
+    height: 300px;
 }
 
-/* Descrições dos produtos */
-.product p {
-    margin: 0; /* Remove margem da descrição */
-    font-size: 0.9em; /* Tamanho do texto da descrição */
-    color: #666; /* Cor do texto da descrição */
+.image-right img {
+    float: right;
+    width: 200px;
+    height: 200px;
 }
 
-.centralize-text {
-    text-align: center;
-    margin: 20px auto;
-    font-size: 18px;
-
+.image-box img {
+    width: 98%;
+    height: 98%;
+    border-radius: 8px;
+    box-shadow: #000000;
+    align-content: center;
 }
 
-/* Ajustes responsivos */
-@media (max-width: 1200px) {
-    .product-column {
-        min-width: calc(50% - 20px); /* Em telas menores, duas colunas */
-    }
+.chips-container {
+    background-color: #aae5e8;
+    border-radius: 1%;
 }
 
-@media (max-width: 768px) {
-    .product-column {
-        min-width: 100%; /* Em telas ainda menores, uma coluna */
-    }
+.arroz-container {
+    background-color: #dbaaa3;
+    border-radius: 1%;
 }
 
+.pizza-container {
+    background-color: #f7e7b2;
+    border-radius: 1%;
+}
 
 /*----------------------------------------------------------------*/
 
@@ -453,7 +451,7 @@ section.hero-site {
     height: 50px;
 }
 
-/* C O N T A T O    P Á G I N A */
+/* C O N T A T O    P Á G I N A   I N Í C I O*/
 /* Contêiner principal de contato */
 .contact-container {
     display: flex;
@@ -461,7 +459,6 @@ section.hero-site {
     align-items: center;
     gap: 20px; /* Espaço entre os elementos */
 }
-
 
 /* Contêiner que contém o telefone e o WhatsApp */
 .contact-info-container {
@@ -471,7 +468,7 @@ section.hero-site {
     margin-bottom: 20px; /* Diminuir o espaço entre o WhatsApp e a linha de cima */
 }
 
-/* Ainhamento entre o telefone e o WhatsApp na mesma linha */
+/* Alinhamento entre o telefone e o WhatsApp na mesma linha */
 .contact-info {
     display: flex;
     gap: 50px; /* Espaçamento entre o telefone e WhatsApp */
@@ -480,7 +477,7 @@ section.hero-site {
 /* Style para o telefone e o WhatsApp */
 .contact-box {
     border-radius: 8px;
-    padding: 20px; /* AAjustar o ícone e o texto */
+    padding: 20px; /* Ajustar o ícone e o texto */
     box-sizing: border-box;
     text-align: center;
     width: 525px; /* Ajustar a largura */
@@ -488,7 +485,6 @@ section.hero-site {
     border: 2px solid #038d5a27;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Box telefone */
 .phone-box {
@@ -519,7 +515,7 @@ section.hero-site {
 }
 
 /* Style para o contêiner de detalhes do contato e formulário */
-.contact-details-form-container, .form-container .form-prodcontainer {
+.contact-details-form-container {
     display: flex;
     justify-content: space-between; /* Espaçamento automático para as colunas */
     width: 100%;
@@ -528,16 +524,16 @@ section.hero-site {
 }
 
 /* Style para os detalhes de contato e formulário */
-.contact-details, .form-container .form-prodcontainer {
+.contact-details {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: 500px; /* Largura fixa para ambas as colunas (sem considerar o form) */
+    width: 500px; /* Largura fixa para a coluna de detalhes de contato */
     box-sizing: border-box;
 }
-/* Formulário*/
-.form-container 
-{
+
+/* Formulário */
+.form-container {
     margin-top: 10px; /* Diminuir o espaço entre o form e a linha de cima */
     height: auto; /* Altura do conteúdo */
     background-color: rgba(122, 223, 189, 0.153);
@@ -549,12 +545,12 @@ section.hero-site {
     margin: 0 auto;
     display: flex;
     margin-left: 80px; /* Adicionar espaço à esquerda do form */
-    justify-content:flex-end;
-    margin-bottom: 55px; /* Espaço abaixo do form e do footer */
-    
+    justify-content: flex-end;
 }
 
+/* Campos de entrada e botão dentro do form */
 .form-container input,
+.form-container select,
 .form-container button {
     display: block;
     width: 97%;
@@ -563,14 +559,15 @@ section.hero-site {
     border-radius: 4px;
     border: 1px solid #ddd;
     box-sizing: border-box;
+}
+
+/* Label dos campos de entrada */
+.form-container input label {
     margin-top: 10px;
 }
 
-form input label{
-    margin-top: 10px;
-}
-
-.form-container  button {
+/* Estilo do botão dentro do form */
+.form-container button {
     background-color: #0471119d;
     color: #fff;
     border: none;
@@ -581,12 +578,14 @@ form input label{
     background-color: #047110;
 }
 
+/* Mensagens de erro */
+.error-message {
+    color: red;
+    margin-top: 5px;
+    display: none; /* Inicialmente ocultar as mensagens de erro */
+}
 
-/*----------------------------------------------------------------*/
-
-/* Style para o formulário */
-
-/* Formulário produto*/
+/* Estilos adicionais para o formulário de produtos */
 .form-prodcontainer {
     width: 100%;
     max-width: 1000px;
@@ -598,9 +597,9 @@ form input label{
     display: flex;
     flex-direction: column; /* Alinha os elementos internamente */
     align-items: center; /* Centraliza o conteúdo dentro do contêiner */
-    
-    
 }
+
+/* Estilos dos campos de entrada e botão dentro do formulário de produtos */
 .form-produtos {
     width: 50%;
     height: auto; /* Altura do conteúdo */
@@ -610,22 +609,19 @@ form input label{
     border-radius: 8px;
     padding: 20px;
     display: flex;
-    
 }
-.input label
- {
+
+.input label {
     display: block;
     width: 100%;
     margin-bottom: 10px;
     align-self: center;
     padding: 10px;
-    align-self: center;
 }
 
 .input input,
 .input select,
-.input textarea
-{
+.input textarea {
     display: block;
     width: 97%;
     margin-bottom: 15px;
@@ -633,10 +629,10 @@ form input label{
     border-radius: 4px;
     border: 1px solid #cccccc; /* Cor da borda dos campos */
     box-sizing: border-box;
-}  
+}
 
-.button button{
-    height:auto;
+.button button {
+    height: auto;
     background-color: #0471119d;
     color: white;
     border: none;
@@ -647,45 +643,11 @@ form input label{
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 4px;
-    box-sizing: border-box;   
-}
-
-.button button:hover{
-    background-color: #047110; 
-}
-/*----------------------------------------------------------------*/
-
-/* Style dos campos de entrada e botão dentro do form */
-.form-container input,
-.form-container select,
-.form-container button 
-.form-prodcontainer input,
-.form-prodcontainer select
-{
-    display: block;
-    width: 97%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #cccccc; /* Cor da borda dos campos */
     box-sizing: border-box;
 }
 
-
-/* Estilo do botão dentro do form */
-.form-container button 
-.form-prodcontainer  button {
-    background-color: #ffffff;
-    color: #047110;
-    border: none;
-    cursor: pointer;
-    border: 2px solid #00000027;
-}
-
-.form-container button:hover 
-.form-prodcontainer form button:hover {
+.button button:hover {
     background-color: #047110;
-    color: #ffffff;
 }
 
 

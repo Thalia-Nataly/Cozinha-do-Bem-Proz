@@ -82,76 +82,102 @@ main {
 
 
 /* Main */
-/* Container principal dos produtos */
+/* Contêiner principal de produtos */
 .content-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que as colunas se movam conforme necessário */
-    gap: 20px; /* Espaçamento entre colunas e produtos */
-    justify-content: space-between; /* Distribui as colunas uniformemente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    gap: 20px; /* Espaço entre as colunas e produtos */
+    justify-content: space-between;
+    max-width: 1000px; /* Largura máxima do contêiner */
+    margin-bottom: 50px;
     padding: 20px;
-    box-sizing: border-box;
 }
 
-/* Coluna de produtos */
+/* Contêiner de cada coluna de produtos */
 .product-column {
-    flex: 1; /* Faz com que cada coluna tenha a mesma largura */
-    min-width: calc(33.33% - 20px); /* Garante que as colunas tenham o mesmo tamanho e se ajustem ao espaço disponível */
+    flex: 1; /* Permite que as colunas se ajustem automaticamente */
+    min-width: 300px; /* Largura mínima para cada coluna */
+    max-width: 32%; /* Largura máxima para cada coluna, ajustável conforme necessário */
 }
 
-/* Caixa de produto */
+/* Contêiner de cada produto */
 .product {
-    background-color: #fff; /* Cor de fundo para a caixa de produto */
-    border: 1px solid #ddd; /* Borda fina ao redor da caixa */
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 15px; /* Espaço interno */
+    background-color: #ffffff; /* Cor de fundo para o produto */
+    border-radius: 8px;
+    padding: 15px;
     box-sizing: border-box;
-    margin-bottom: 20px; /* Espaço entre produtos */
-    text-align: center; /* Centraliza o texto e a imagem */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para a caixa de produto */
-    height: 300px; /* Altura fixa para todas as caixas de produto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do produto */
+    margin-bottom: 20px; /* Espaço entre os produtos */
 }
 
 /* Imagem do produto */
 .product img {
-    width: 100%; /* Imagem ocupa toda a largura da caixa */
+    width: 100%; /* Ocupa toda a largura do contêiner do produto */
     height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Cantos arredondados na imagem */
-    object-fit: cover; /* Faz com que a imagem cubra a caixa sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
 }
 
-/* Títulos dos produtos */
+/* Título do produto */
 .product h2 {
-    margin: 10px 0; /* Espaço acima e abaixo do título */
-    font-size: 1.2em; /* Tamanho do texto do título */
+    margin: 0 0 10px; /* Margem inferior para separar do texto */
+    font-size: 1.2em; /* Ajuste o tamanho do título conforme necessário */
 }
 
-/* Descrições dos produtos */
+/* Descrição do produto */
 .product p {
-    margin: 0; /* Remove margem da descrição */
-    font-size: 0.9em; /* Tamanho do texto da descrição */
-    color: #666; /* Cor do texto da descrição */
+    margin: 0;
+    font-size: 1em; /* Ajuste o tamanho do texto conforme necessário */
 }
 
-.centralize-text {
-    text-align: center;
-    margin: 20px auto;
-    font-size: 18px;
-
+/* Estilo das caixas de texto */
+.text-box1, .text-box2, .text-box3 {
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 650px; /* Ajuste conforme necessário */
 }
 
-/* Ajustes responsivos */
-@media (max-width: 1200px) {
-    .product-column {
-        min-width: calc(50% - 20px); /* Em telas menores, duas colunas */
-    }
+.text-box1 {
+    background-color: #aae5e8;
 }
 
-@media (max-width: 768px) {
-    .product-column {
-        min-width: 100%; /* Em telas ainda menores, uma coluna */
-    }
+.text-box2 {
+    background-color: #dbaaa3;
 }
 
+.text-box3 {
+    background-color: #f7e7b2;
+}
+
+/* Estilo das imagens dentro das caixas de texto */
+.image-box {
+    max-width: 98%;
+    height: 300px; /* Ajuste conforme necessário */
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos containers específicos */
+.chips-container {
+    background-color: #aae5e8;
+    border-radius: 8px; /* Ajustado para consistência */
+}
+
+.arroz-container {
+    background-color: #dbaaa3;
+    border-radius: 8px; /* Ajustado para consistência */
+}
+
+.pizza-container {
+    background-color: #f7e7b2;
+    border-radius: 8px; /* Ajustado para consistência */
+}
 
 /*----------------------------------------------------------------*/
 
