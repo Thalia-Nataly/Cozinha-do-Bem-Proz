@@ -1,0 +1,31 @@
+@media screen and (max-width: 660px) {
+    header .menu-desktop, header .btn-contato {
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    /* resposinvo da hero */
+    .hero-site .txt-hero {
+        background-color: rgba(122, 223, 189, 0.153);
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+        padding: 20px;
+    
+    }
+    
+    .hero-site .txt-hero h1 p{
+        font-size: 2em;
+        font-weight: 300;
+    }
+    
+    .hero-site .txt-hero p {
+        font-size: 20px;
+        font-weight: 300;
+        margin: 25px 0;
+        
+    }
+    
+}

@@ -1,0 +1,7 @@
+@media screen and (max-width: 900px) {
+    header .menu-desktop, header .btn-contato {
+        display: none;
+    }
+    
+    
+}

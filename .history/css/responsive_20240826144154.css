@@ -1,0 +1,115 @@
+@media screen and (max-width: 660px) {
+    header .menu-desktop, header .btn-contato {
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    /* resposinvo da hero */
+    
+    .hero-site .txt-hero h1 p{
+        font-size: 1.5em;
+        font-weight: 45px;
+    }
+    
+    .hero-site .txt-hero p {
+        font-size: 1.2em;
+        font-weight: 300;
+        
+          
+    }
+
+    .hero-site .txt-hero p span {
+        display: inline;
+    }
+
+    .hero-site button,.box-img button {
+    width: 200px;
+    height: 50px;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+    .box-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .box-conteiners {
+
+        padding: 20px;
+        max-width: auto;
+        height: auto;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: wrap;
+
+
+
+    }
+
+
+    .box-content {
+
+        width: 550px;
+        height: 300px;
+        
+    }
+
+
+    .box-content h1 {
+        width: 500px;
+        display: flex;
+        
+    }
+
+    .box-content p {
+        width: 800px;
+        text-align: justify;
+    }
+
+    .main-content {
+        width: 500px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 80px;
+        
+        
+    }
+    
+    .main-content h1 {
+        margin-bottom: 20px;
+        padding: 50px;
+        font-size: 1.5em;
+    
+    }
+    
+    .main-content h3 {
+        font-size: 1.2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .main-content p {
+        margin-bottom: 10px;
+    }
+    
+    .main-content ul {
+        margin-bottom: 10px;
+    }
+    
+    .main-content ul li {
+        margin-bottom: 10px;
+    }
+    
+    .main-content img {
+        display: block;
+        margin: 10px 0;
+    }
+
+}

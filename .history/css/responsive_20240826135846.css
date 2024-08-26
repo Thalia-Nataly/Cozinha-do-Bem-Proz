@@ -1,0 +1,12 @@
+/*media queries para ajustar o layout em diferentes tamanhos de tela.*/
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+}
+
+/*----------------------------------------------------------------*/

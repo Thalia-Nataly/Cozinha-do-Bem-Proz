@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    header .menu-desktop, header {
+        display: none;
+    }
+    
+    .menu-mobile {
+        display: block;
+    }
+    
+}
