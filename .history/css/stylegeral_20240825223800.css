@@ -368,7 +368,7 @@ header .btn-contato button,
 .botaosaiba button {
     font-size: 18px;
     background-color: transparent;
-    border: transparent;
+    
     color: #171616;
     cursor: pointer;
     transition: .5s;
@@ -394,7 +394,7 @@ header.rolar .menu-desktop nav ul li a {
 
 header.rolar .btn-contato button:hover {
     background-color: #036047;
-    color: white;
+    color: #ebf5f4;
 }
 
 header.rolar .logo img.logo-branca {
