@@ -631,7 +631,7 @@ form input label{
 
 .button button{
     height:auto;
-    background-color: #0471119d;
+    background-color: #047110;
     color: white;
     border: none;
     cursor: pointer;
@@ -644,9 +644,7 @@ form input label{
     box-sizing: border-box;   
 }
 
-.button button:hover{
-    background-color: #047110; 
-}
+.button button
 /*----------------------------------------------------------------*/
 
 /* Style dos campos de entrada e botão dentro do form */

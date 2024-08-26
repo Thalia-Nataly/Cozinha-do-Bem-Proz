@@ -560,19 +560,19 @@ section.hero-site {
     margin-top: 10px;
 }
 
-form input label{
+.form-container input tex{
     margin-top: 10px;
 }
 
 .form-container  button {
-    background-color: #0471119d;
+    background-color: #4799eb;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 .form-container button:hover {
-    background-color: #047110;
+    background-color: #0056b3;
 }
 
 
@@ -631,7 +631,7 @@ form input label{
 
 .button button{
     height:auto;
-    background-color: #0471119d;
+    background-color: #4799eb;
     color: white;
     border: none;
     cursor: pointer;
@@ -644,9 +644,7 @@ form input label{
     box-sizing: border-box;   
 }
 
-.button button:hover{
-    background-color: #047110; 
-}
+
 /*----------------------------------------------------------------*/
 
 /* Style dos campos de entrada e botão dentro do form */
