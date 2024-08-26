@@ -385,16 +385,14 @@ header.rolar {
     background-color: #02484691;
     padding: 10px 0;
     box-shadow: 0 0 8px #0bb8a772;
-   
+    color: ;
 
 }
 
 header.rolar .menu-desktop nav ul li a {
     color: #ffffff;
 }
- header.rolar .btn-contato button{
-    color: #ffffff;
- }
+
 header.rolar .btn-contato button:hover {
     background-color: #036047;
     color: white;

@@ -392,9 +392,7 @@ header.rolar {
 header.rolar .menu-desktop nav ul li a {
     color: #ffffff;
 }
- header.rolar .btn-contato button{
-    color: #ffffff;
- }
+
 header.rolar .btn-contato button:hover {
     background-color: #036047;
     color: white;
