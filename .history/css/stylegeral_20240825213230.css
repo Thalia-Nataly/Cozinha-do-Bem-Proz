@@ -582,8 +582,7 @@ section.hero-site {
     margin: 0 auto;
     display: block;
     margin-left: 80px; /* Adicionar espaço à esquerda do form */
-    justify-content:flex-end;
-    
+    justify-content: center;
 }
 /* Formulário produto*/
 .form-prodcontainer {
@@ -594,10 +593,8 @@ section.hero-site {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(122, 223, 189, 0.153);
     border-radius: 8px;
-    display: flex;
-    flex-direction: column; /* Alinha os elementos internamente */
-    align-items: center; /* Centraliza o conteúdo dentro do contêiner */
-    
+    display: block;
+    flex-direction: column;
     
 }
 .form-produtos {

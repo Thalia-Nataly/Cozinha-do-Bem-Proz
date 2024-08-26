@@ -582,8 +582,6 @@ section.hero-site {
     margin: 0 auto;
     display: block;
     margin-left: 80px; /* Adicionar espaço à esquerda do form */
-    justify-content:flex-end;
-    
 }
 /* Formulário produto*/
 .form-prodcontainer {
@@ -591,14 +589,11 @@ section.hero-site {
     max-width: 1000px;
     margin: 0 auto;
     padding: 80px;
+   
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(122, 223, 189, 0.153);
     border-radius: 8px;
-    display: flex;
-    flex-direction: column; /* Alinha os elementos internamente */
-    align-items: center; /* Centraliza o conteúdo dentro do contêiner */
-    
-    
+    display: block;
 }
 .form-produtos {
     width: 50%;
@@ -611,14 +606,14 @@ section.hero-site {
     display: flex;
     
  .input input,
-    display:flex;
+    display: F;
     width: 60%;
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 4px;
     box-sizing: border-box;   
     
-    
+    align-self: center;
 }
 .input label,
  {
@@ -627,7 +622,6 @@ section.hero-site {
     margin-bottom: 10px;
     align-self: center;
     padding: 10px;
-    align-self: center;
 }
 
 .input input,

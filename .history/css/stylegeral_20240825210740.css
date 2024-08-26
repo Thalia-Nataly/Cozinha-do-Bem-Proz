@@ -582,81 +582,40 @@ section.hero-site {
     margin: 0 auto;
     display: block;
     margin-left: 80px; /* Adicionar espaço à esquerda do form */
-    justify-content:flex-end;
-    
 }
 /* Formulário produto*/
 .form-prodcontainer {
-    width: 100%;
+    width: 1000%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 80px;
+    font-family: Arial, sans-serif;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(122, 223, 189, 0.153);
     border-radius: 8px;
-    display: flex;
-    flex-direction: column; /* Alinha os elementos internamente */
-    align-items: center; /* Centraliza o conteúdo dentro do contêiner */
-    
-    
+    display: block;
 }
 .form-produtos {
-    width: 50%;
+    margin-top: 10px; /* Diminuir o espaço entre o form e a linha de cima */
     height: auto; /* Altura do conteúdo */
     background-color: rgba(122, 223, 189, 0.153);
     border: 2px solid #038d5a27;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
-    display: flex;
+    max-width: 1000px;
     
- .input input,
-    display:flex;
-    width: 60%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 4px;
-    box-sizing: border-box;   
-    
-    
-}
-.input label,
- {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    align-self: center;
-    padding: 10px;
-    align-self: center;
-}
-
-.input input,
-.input select,
-.input textarea
-{
+ .input,
+ . button {
     display: block;
     width: 97%;
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 4px;
-    border: 1px solid #cccccc; /* Cor da borda dos campos */
     box-sizing: border-box;
-}  
-
-.button button{
-    height:auto;
-    background-color: #4799eb;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    display: block;
-    width: 97%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 4px;
-    box-sizing: border-box;   
-}
+    width: 100px;
+  
+    
 }
 
 /*----------------------------------------------------------------*/
@@ -676,7 +635,16 @@ section.hero-site {
     border: 1px solid #cccccc; /* Cor da borda dos campos */
     box-sizing: border-box;
 }
-
+.form-prodcontainer button{
+    height:auto;
+    width: 70px;
+    margin-bottom: 15px;
+    background-color: #4799eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
 
 /* Estilo do botão dentro do form */
 .form-container button 
