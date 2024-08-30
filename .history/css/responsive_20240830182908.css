@@ -189,24 +189,9 @@
         border: 1px solid #cccccc; /* Cor da borda dos campos */
         box-sizing: border-box;
     }
-    /* Container principal dos produtos */
-    .content-container {
-        justify-content: center;
-        
-    }
 
-    /* Coluna de produtos */
-    .product-column {
-        flex-direction: column;
-       
-    }
 
-    /* Caixa de produto */
-    .product {
-       
-    }
-
-        
+    
 
     /* Formulário produto*/
 .form-prodcontainer {

@@ -189,24 +189,43 @@
         border: 1px solid #cccccc; /* Cor da borda dos campos */
         box-sizing: border-box;
     }
-    /* Container principal dos produtos */
-    .content-container {
-        justify-content: center;
-        
-    }
+/* Container principal dos produtos */
+.content-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as colunas se movam conforme necessário */
+    gap: 20px; /* Espaçamento entre colunas e produtos */
+    justify-content: center; /* Centraliza as colunas */
+    align-items: flex-start;
+    max-width: 1000px; /* Largura máxima para o container */
+    margin: 0 auto 50px; /* Centraliza o container e adiciona margem inferior */
+    padding: 20px;
+}
 
-    /* Coluna de produtos */
-    .product-column {
-        flex-direction: column;
-       
-    }
+/* Coluna de produtos */
+.product-column {
+    flex: 1; /* Faz com que cada coluna tenha a mesma largura */
+    min-width: calc(33.33% - 20px); /* Garante que as colunas tenham o mesmo tamanho e se ajustem ao espaço disponível */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
 
-    /* Caixa de produto */
-    .product {
-       
-    }
+/* Caixa de produto */
+.product {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Alinha os itens na vertical */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    background-color: rgba(122, 223, 189, 0.153);
+    border: 2px solid #038d5a27;
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 15px; /* Espaço interno */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Espaço entre produtos */
+    text-align: center; /* Centraliza o texto e a imagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para a caixa de produto */
+    height: 300px; /* Altura fixa para todas as caixas de produto */
+}
 
-        
+    
 
     /* Formulário produto*/
 .form-prodcontainer {
