@@ -1,0 +1,12 @@
+
+// selecionando os elementos
+let btnMenuMob = document.querySelector('#btn-menu-mob');
+let Line1 = document.querySelector('.line-menumob-1');
+let Line2 = document.querySelector('.line-menumob-2');
+
+// adicionando evento click na barra de menu
+btnMenuMob.addEventListener("click", () => {
+    Line1.classList.toggle('ativo1')
+    Line2.classList.toggle('ativo2')
+    
+})
