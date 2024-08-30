@@ -3,73 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Produtos</title>
     <link rel="icon" href="Imagens/favicon.jpg" type="image/jpg">
     <!-- CSS -->
     <link rel="stylesheet" href="css/stylegeral.css">
     <link rel="stylesheet" href="css/responsive.css" media="screen">
     <!-- JS -->
     <script src="js/index.js" defer></script>
-    <script src="js/btn-menu-mob.js" defer></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body> 
-    <main>
-        <a id="top"></a>
-        <header id="header">       
-        <div class = "interface">
+    <!-- Topo -->
+    <a id="top"></a>
 
-            <section class="logo">
-                <img class= "logo-branca" src="Imagens/logo.jpg" alt="Logo"> 
-                <img class= "logo-preto" src="Imagens/logobranca.png" alt="Logo">
-               </section>
+    <!-- Cabeçalho -->
+    <header id="header">       
+       <div class="interface">
+        <section class="logo">
+            <img class="logo-branca" src="Imagens/logo.jpg" alt="Logo"> 
+            <img class="logo-preto" src="Imagens/logobranca.png" alt="Logo">
+           </section>
+            <section class="menu-desktop">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="btn-contato">
+                <a href="contato.html">
+                    <button>Contato</button>
+                </a>
+            </section>
+        </div>
+    </header>
 
-                <section class="menu-desktop">
-                    <nav>
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
-                            <li><a href="produtos.html">Produtos</a></li>
-                            
-                        </ul>
-                    </nav>
-                </section>
-
-                <section class="btn-contato">
-                    <a href="contato.html">
-                        <button>Contato</button>
-                    </a>
-                </section>
-            </div>
-        </header>
+    <!-- Main -->
+<main>
+    <div class="main-content">  
+        <div class="box-conteiners">
+            <div class="box-content">
+                <h1>Nossos produtos</h1>
+                <p><span> Descubra a pureza e o sabor dos nossos produtos orgânicos: cada item é cuidadosamente selecionado para oferecer a você a 
+                    melhor qualidade e frescor. Compre com confiança e apoie práticas sustentáveis que promovem a saúde e o bem-estar de nossa 
+                    comunidade e do planeta.</span></p> 
+            </div>    
+        </div>
+    </div>
+    <div class="centralize-text">
+        <p>Veja a nossa lista de alimentos orgânicos e clique <a href="contato.html" class="contact-link">Aqui</a> para comprar os produtos desejados.</p>
+    </div>
         
-            <div class="main-content">
-                <h1>Entenda como os alimentos doados são utilizados para chegar a todos</h1>
-                <p>Com o próposito de alcançar o maior número de pessoas, buscamos a sua doação e colaboração. Para isso, é importante que entenda as formas que esse alimento doado chega até seus consumidores. Além de distribuirmos cestas básicas, também realizamos a distribuição da refeição pronta.
-                <br></br>
-                No centro ensinamos como preparar os alimentos de forma inteligente: evitando o desperdício e tendo o máximo de aproveitamento. É uma forma de promover a conscientização, valorização e boa utilização dos alimentos doados. 
-                </p>
-                <p>Nessa página, você encontrará receitas desses alimentos, bem como poderá ter acesso a mais informações sobre nós.</p>
-        
-                <div class="content-container chips-container">
-                    <div class="text-box1">
-                        <h3>Chips de Casca de Batata no Micro-ondas</h3>
-                        <p>Você vai precisar de: cascas de batatas que seriam jogadas fora, azeite, um recipiente que possa ser ir ao micro-ondas, tempero a gosto e papel toalha.</p>
-                        <ul>
-                            <li>1 - Unte o recipiente com um fio de azeite. Espalhe usando uma folha de papel toalha.</li>
-                            <li>2 - Lave bem e seque as cascas de batata com uma folha de papel toalha e as coloque no recipiente.</li>
-                            <li>3 - Derrame um pouco de azeite sobre as cascas.</li>
-                            <li>4 - Deixe no micro-ondas em torno de 4 minutos. O tempo pode variar de acordo com a potência de cada micro-ondas, então é importante verificar a cada minuto.</li>
-                            <li>5 - Após verificar que já estão crocantes, tempere a seu gosto, espere esfriar e pode se servir.</li>
-                        </ul>
-                    </div>
-                    <div class="image-box">
-                        <img src="Imagens/chips_batata.jpg" alt="Chips de Casca de Batata" width="300" height="200">
-                    </div>
+        <!-- Seções de Produtos -->
+        <div class="content-container">
+            <!-- Coluna 1 -->
+            <div class="product-column">
+                <!-- Produto 1 -->
+                <div class="product">
+                    
+                    <h2>Cacau Orgânico</h2>
+                    <p>O cacau é a base dos nossos deliciosos chocolates. Cultivado sem pesticidas, preserva o sabor puro e a riqueza nutricional.</p>
+                </div>
+                <!-- Produto 2 -->
+                <div class="product">
+                    
+                    <h2>Maçã Orgânica</h2>
+                    <p>Nossas maçãs são crocantes e suculentas, cultivadas de forma sustentável para garantir um sabor fresco e natural.</p>
+                </div>
+                <!-- Produto 3 -->
+                <div class="product">
+                    <img src="Imagens/tomate.jpg" alt="Tomate">
+                    <h2>Tomate Orgânico</h2>
+                    <p>Tomates maduros e cheios de sabor, cultivados sem produtos químicos para oferecer um toque especial às suas refeições.</p>
+                </div>
+                <!-- Produto 4 -->
+                <div class="product">
+                   
+                    <h2>Mel Orgânico</h2>
+                    <p>Mel puro e natural, extraído com cuidado para preservar todos os benefícios e o sabor rico dos nossos produtos.</p>
+                </div>
+                <!-- Produto 5 -->
+                <div class="product">
+                    
+                    <h2>Alface Orgânica</h2>
+                    <p>Alface fresca e crocante, cultivada sem agrotóxicos para uma salada saudável.</p>
+                </div>
+                <!-- Produto 6 -->
+                <div class="product">
+                    
+                    <h2>Cenoura Orgânica</h2>
+                    <p>Cenouras doces e nutritivas, cultivadas em solo saudável e livre de pesticidas.</p>
+                </div>
+                <!-- Produto 7 -->
+                <div class="product">
+                    
+                    <h2>Espinafre Orgânico</h2>
+                    <p>Espinafre fresco, rico em nutrientes, ideal para uma dieta saudável e equilibrada.</p>
                 </div>
                 <!-- Produto 8 -->
                 <div class="product">

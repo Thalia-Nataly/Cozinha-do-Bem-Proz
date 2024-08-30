@@ -7,7 +7,18 @@
 }
 
 /*----------------------------------------------------------------*/
+/*media queries para ajustar o layout em diferentes tamanhos de tela.*/
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
 
+    .menu-mobile {
+        display: block;
+    }
+}
+
+/*----------------------------------------------------------------*/
 body {
     background-repeat: no-repeat, repeat;
     background-attachment: scroll, fixed;
@@ -18,6 +29,8 @@ body {
     box-sizing: border-box;
 
 }
+
+
 
 /*----------------------------------------------------------------*/
 
@@ -34,10 +47,10 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 80px;
+    font-family: Arial, sans-serif;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(122, 223, 189, 0.153);
     border-radius: 8px;
-    border: transparent;
 }
 
 .main-content h1 {
@@ -71,73 +84,48 @@ main {
 
 
 /* Main */
-/* Container principal dos produtos */
 .content-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que as colunas se movam conforme necessário */
-    gap: 20px; /* Espaçamento entre colunas e produtos */
-    justify-content: center; /* Centraliza as colunas */
     align-items: flex-start;
-    max-width: 1000px; /* Largura máxima para o container */
-    margin: 0 auto 50px; /* Centraliza o container e adiciona margem inferior */
+    gap: 15px;
+    max-width: 1000px;
+    margin-bottom: 50px;
     padding: 20px;
 }
 
-/* Coluna de produtos */
-.product-column {
-    flex: 1; /* Faz com que cada coluna tenha a mesma largura */
-    min-width: calc(33.33% - 20px); /* Garante que as colunas tenham o mesmo tamanho e se ajustem ao espaço disponível */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
-}
-
-/* Caixa de produto */
-.product {
-    display: flex; /* Ativa o Flexbox */
-    flex-direction: column; /* Alinha os itens na vertical */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    background-color: rgba(122, 223, 189, 0.153);
-    border: 2px solid #038d5a27;
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 15px; /* Espaço interno */
+.text-box1 .text-box2 .text-box3 {
+    border-radius: 8px;
+    padding: 20px;
     box-sizing: border-box;
-    margin-bottom: 20px; /* Espaço entre produtos */
-    text-align: center; /* Centraliza o texto e a imagem */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para a caixa de produto */
-    height: 300px; /* Altura fixa para todas as caixas de produto */
+    max-width: 2000px;
+    height: 650px;
 }
 
-/* Imagem do produto */
-.product img {
-    width: 100%; /* Imagem ocupa toda a largura da caixa */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Cantos arredondados na imagem */
-    object-fit: cover; /* Faz com que a imagem cubra a caixa sem distorcer */
+.text-box1 {
+    background-color: #aae5e8;
+    flex: 1;
 }
 
-/* Títulos dos produtos */
-.product h2 {
-    margin: 10px 0; /* Espaço acima e abaixo do título */
-    font-size: 1.2em; /* Tamanho do texto do título */
+.text-box2 {
+    background-color: #dbaaa3;
+    flex: 1;
 }
 
-/* Descrições dos produtos */
-.product p {
-    margin: 0; /* Remove margem da descrição */
-    font-size: 0.9em; /* Tamanho do texto da descrição */
-    color: #666; /* Cor do texto da descrição */
-}
-
-.centralize-text {
-    text-align: center;
-    margin: 20px auto;
-    font-size: 18px;
+.text-box3 {
+    background-color: #f7e7b2;
+    flex: 1;
 }
 
 .image-box {
     flex: 1;
-    max-width: 98%;
+    max-width: 300px;
     height: 300px;
+}
+
+.image-right img {
+    float: right;
+    width: 200px;
+    height: 200px;
 }
 
 .image-box img {
@@ -145,79 +133,30 @@ main {
     height: 98%;
     border-radius: 8px;
     box-shadow: #000000;
-    flex-direction: center;
+    align-content: center;
 }
 
-/* Contêiner do formulário para alinhamento com as colunas */
-.form-container-wrapper {
-    width: 100%;
-    max-width: 1000px; /* Deve corresponder à largura total das três colunas */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 20px;
+.chips-container {
+    background-color: #aae5e8;
+    border-radius: 1%;
 }
 
-/* Formulário */
-.form-container {
-    display: flex;
-    flex-direction: column; /* Alinha o conteúdo na vertical */
-    align-items: center; /* Centraliza horizontalmente */
-    text-align: center; /* Centraliza o texto dentro do formulário */
-    padding: 20px; /* Espaçamento interno */
-    border: 1px solid #ddd; /* Borda do formulário */
-    border-radius: 8px; /* Cantos arredondados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra do formulário */
-    background-color: #f9f9f9; /* Cor de fundo do formulário */
+.arroz-container {
+    background-color: #dbaaa3;
+    border-radius: 1%;
 }
 
-form {
-    width: 100%; /* Ocupa toda a largura do contêiner */
+.pizza-container {
+    background-color: #f7e7b2;
+    border-radius: 1%;
 }
-
-label, input, select, button {
-    display: block; /* Faz com que os elementos se comportem como blocos */
-    width: 100%; /* Ocupa toda a largura do formulário */
-    margin-bottom: 10px; /* Espaço entre os elementos */
-}
-
-input, select {
-    padding: 10px; /* Espaçamento interno dos campos */
-    border: 1px solid #ccc; /* Cor da borda dos campos */
-    border-radius: 4px; /* Cantos arredondados dos campos */
-}
-
-button {
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Remove a borda do botão */
-    padding: 10px; /* Espaçamento interno do botão */
-    border-radius: 4px; /* Cantos arredondados do botão */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    font-size: 16px; /* Tamanho da fonte do botão */
-}
-
-button:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
-}
-
-/* Ajustes responsivos */
-@media (max-width: 1200px) {
-    .product-column {
-        min-width: calc(50% - 20px); /* Em telas menores, duas colunas */
-    }
-}
-
-@media (max-width: 768px) {
-    .product-column {
-        min-width: 100%; /* Em telas ainda menores, uma coluna */
-    }
-}
-
 
 /*----------------------------------------------------------------*/
 
 
 /* Footer GERAL */
 footer {
+    margin-top: 10px; /* Diminuir o espaço entre o form e a linha de cima */
     align-items: center;
     text-align: center;
     list-style: none;
@@ -330,7 +269,7 @@ footer p {
 
 .banner {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -354,7 +293,6 @@ footer p {
 .interface {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 4%;
 }
 
 header .btn-contato button:hover {
@@ -374,14 +312,14 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    
+
     transition: .5s;
     z-index: 5;
 }
 
 header .interface {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: transparent;
 
@@ -431,13 +369,10 @@ header .btn-contato button,
 .botaosaiba button {
     font-size: 18px;
     background-color: transparent;
-    border:#036047 solid;
-    border-radius: 8px;
-    border-width: 1px;
+    border: transparent;
     color: #171616;
     cursor: pointer;
     transition: .5s;
-    padding: 3px;
 }
 
 header .btn-contato button:hover,
@@ -473,92 +408,8 @@ header.rolar .logo img.logo-branca {
 header.rolar .logo img.logo-preto {
     display: block;
 }
-/* Estilo do botão Menu Mobile */
-header .btn-menu-mob{
-    display: none;
-    position: relative;
-    z-index: 999999999999999999999;
-}
-header .btn-menu-mob div{
-    background-color:black;
-    height: 3px;
-    margin: 10px 0;
-    transition: 0.2s;
-   
-}
-header .btn-menu-mob .line-menumob-1 {
-    width: 30px;
-}
-header .btn-menu-mob .line-menumob-2 {
-    width: 20px;
-}
 
- header.rolar .btn-menu-mob div{ 
-    background-color:white;
- } 
- 
- header .btn-menu-mob .line-menumob-1.ativo1{
-    transform: rotate(45deg) translate(30%);
-    background-color: #ffffff;
- }
- 
- header .btn-menu-mob .line-menumob-2.ativo2{
-    transform: rotate(-45deg) translate(30%);
-    width: 30px;
-    background-color: #ffffff;
- }
-
-
-/* Estilo do Menu Mobile */
-header .menu-mobile{
-    width: 0;
-    height: 0;
-    background-color:#033915;
-    position:absolute;
-    top: 0;
-    right: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    transition: .5s;
-    
-}
-header .menu-mobile nav{
-    width: 100%;
-}
-header .menu-mobile nav ul {
-    list-style-type: none;
-}
-header .menu-mobile nav a{
-    font-size: 24px;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 20px 0;
-    display: block;
-    transition: .5s;
-}
-header .menu-mobile nav a:hover{
-    background-color: #ffffff;
-    color: black;
-    box-shadow: 0 0 20px #fff;
-
-}
-
-header .menu-mobile.abrir{
-    width: 100%;
-    height: 100vh;
-    
-}
-body.no-overflow{
-    overflow: hidden;
-}
-/* fim Estilo do botão Menu Mobile */
-
-
-/*Hero-site*- HOME*/
+/*Hero-site*/
 section.hero-site {
     height: 98vh;
     color: black;
@@ -579,9 +430,9 @@ section.hero-site {
 
 }
 
-.hero-site .txt-hero h1 p{
-    font-size: 2em;
-    font-weight: 300;
+.hero-site .txt-hero h1 {
+    font-size: 4em;
+    font-weight: 200;
 }
 
 .hero-site .txt-hero p {
@@ -600,96 +451,8 @@ section.hero-site {
     width: 200px;
     height: 50px;
 }
-/* ---------------FIM Hero-site*- HOME ---------------*/
 
-/* Container principal dos produtos */
-.content-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que as colunas se movam conforme necessário */
-    gap: 20px; /* Espaçamento entre colunas e produtos */
-    justify-content: center; /* Centraliza as colunas */
-    align-items: flex-start;
-    max-width: 1000px; /* Largura máxima para o container */
-    margin: 0 auto 50px; /* Centraliza o container e adiciona margem inferior */
-    padding: 20px;
-}
-
-/* Coluna de produtos */
-.product-column {
-    flex: 1; /* Faz com que cada coluna tenha a mesma largura */
-    min-width: calc(33.33% - 20px); /* Garante que as colunas tenham o mesmo tamanho e se ajustem ao espaço disponível */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
-}
-
-/* Caixa de produto */
-.product {
-    display: flex; /* Ativa o Flexbox */
-    flex-direction: column; /* Alinha os itens na vertical */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    background-color: rgba(122, 223, 189, 0.153);
-    border: 2px solid #038d5a27;
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 15px; /* Espaço interno */
-    box-sizing: border-box;
-    margin-bottom: 20px; /* Espaço entre produtos */
-    text-align: center; /* Centraliza o texto e a imagem */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para a caixa de produto */
-    height: 300px; /* Altura fixa para todas as caixas de produto */
-}
-
-/* Imagem do produto */
-.product img {
-    width: 100%; /* Imagem ocupa toda a largura da caixa */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Cantos arredondados na imagem */
-    object-fit: cover; /* Faz com que a imagem cubra a caixa sem distorcer */
-}
-
-/* Títulos dos produtos */
-.product h2 {
-    margin: 10px 0; /* Espaço acima e abaixo do título */
-    font-size: 1.2em; /* Tamanho do texto do título */
-}
-
-/* Descrições dos produtos */
-.product p {
-    margin: 0; /* Remove margem da descrição */
-    font-size: 0.9em; /* Tamanho do texto da descrição */
-    color: #666; /* Cor do texto da descrição */
-}
-
-.centralize-text {
-    text-align: center;
-    margin: 20px auto;
-    font-size: 18px;
-}
-
-.image-box {
-    flex: 1;
-    max-width: 98%;
-    height: 300px;
-}
-
-.image-box img {
-    width: 98%;
-    height: 98%;
-    border-radius: 8px;
-    box-shadow: #000000;
-    flex-direction: center;
-}
-
-/* Contêiner do formulário para alinhamento com as colunas */
-.form-container-wrapper {
-    width: 100%;
-    max-width: 1000px; /* Deve corresponder à largura total das três colunas */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 20px;
-}
-
-/* FIM Container principal dos produtos */
-
-/* C O N T A T O    P Á G I N A */
+/* C O N T A T O    P Á G I N A   I N Í C I O*/
 /* Contêiner principal de contato */
 .contact-container {
     display: flex;
@@ -786,7 +549,6 @@ section.hero-site {
     display: flex;
     margin-left: 80px; /* Adicionar espaço à esquerda do form */
     justify-content:flex-end;
-    margin-bottom: 55px; /* Espaço abaixo do form e do footer */
     
 }
 
@@ -954,7 +716,7 @@ form input label{
     width: 800px;
     height: 300px;
     background-color: rgba(122, 223, 189, 0.153);
-    border: transparent;
+    border: 2px solid #038d5a27;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     border-start-start-radius: 30%;
@@ -1013,6 +775,8 @@ form input label{
     order: 1;
     border-end-end-radius: 10%;
     border-start-end-radius: 10%;
+  
+
 
 }
 
@@ -1021,4 +785,5 @@ form input label{
     align-self: center;
     flex-direction: center;
     order: 1;
+
 }

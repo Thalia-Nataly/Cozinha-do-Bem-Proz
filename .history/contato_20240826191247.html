@@ -3,73 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" href="Imagens\favicon.jpg" type="image/jpg">
+    <title>Contato</title>
+    <link rel="icon" href="Imagens/favicon.jpg" type="image/jpg">
     <!-- CSS -->
     <link rel="stylesheet" href="css/stylegeral.css">
     <link rel="stylesheet" href="css/responsive.css" media=screen>
     <!-- JS -->
     <script src="js/index.js" defer></script>
-    <script src="js/btn-menu-mob.js" defer></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- Google fonts -->
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body> 
-    <!-- Botão "Voltar ao topo" -->
+    <!-- Topo -->
     <a id="top"></a>
+
     <!-- Cabeçalho -->
-    <header id="header"> 
-             
-       <div class = "interface">
-    <!-- logo -->
-            <section class="logo">
-                <img class= "logo-branca" src="Imagens/logo.jpg" alt="Logo"> 
-                <img class= "logo-preto" src="Imagens/logobranca.png" alt="Logo">
-            </section>
-    <!--Fim logo -->
-    <!-- Menu -->
+    <header id="header">       
+       <div class="interface">
+        <section class="logo">
+            <img class= "logo-branca" src="Imagens/logo.jpg" alt="Logo"> 
+            <img class= "logo-preto" src="Imagens/logobranca.png" alt="Logo">
+           </section>
             <section class="menu-desktop">
                 <nav>
                     <ul>
                         <li><a href="home.html">Home</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="produtos.html">Produtos</a></li> 
+                        <li><a href="produtos.html">Produtos</a></li>
                     </ul>
                 </nav>
             </section>
-    <!--Fim menu -->
-    <!-- contato -->
             <section class="btn-contato">
-                    <a href="contato.html">
-                        <button>Contato</button>
-                    </a>
+                <a href="contato.html">
+                    <button>Contato</button>
+                </a>
             </section>
-     <!--Fim contato -->
-    <!-- Menu responsive -->
-            <div class="btn-menu-mob" id="btn-menu-mob">
-            <div class = "line-menumob-1"></div>
-            <div class = "line-menumob-2"></div>
-            
-            </div>
-            <section class="menu-mobile" id="menu-mobile">
-                <nav>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="produtos.html">Produtos</a></li> 
-                        <li><a href="contato.html">Contato</a></li> 
-                    </ul>
-                </nav>
-            </section>
-    <!-- Fim Menu responsive -->
-        </div> 
+        </div>
     </header>
-<!--Fim cabeçalho-->
 
     <!-- Main -->
     <main>
@@ -77,8 +49,7 @@
             <div class="box-conteiners">
                 <div class="box-content">
                     <h1>Nosso Atendimento</h1>
-                    <p><span>Para doar alimentos ou comprar algum alimentos conosco, por gentileza entre em contato pelos nossos canais de atendimento. <br></br>Em até 30 minutos, um de nossos vendedores irá lhe atender</span></p> 
-                
+                    <p><span>Para doar alimentos ou comprar algum alimentos conosco, por gentileza entre em contato pelos nossos canais de atendimento.</span></p> 
                 </div>    
             </div>
         </div>
@@ -147,13 +118,14 @@
                         </div>
 
                         <label for="contact-preference">Qual forma de contato você prefere?</label>
-                        <select required id="contact-preference" name="contact-preference">
-                            <option value="" disabled selected>Escolha uma opção</option>
+                        <select id="contact-preference" name="contact-preference" required>
+                            <option value="" disabled selected>Escolha uma opção</option> <!-- Opção vazia que obrigará o usuário a escolher uma das opções abaixo -->
                             <option value="call">Ligação</option>
                             <option value="whatsapp">Mensagem no WhatsApp</option>
                         </select>
                         
                         <button type="submit">Enviar</button>
+                        
                     </form>
                 </div>
             </div>
