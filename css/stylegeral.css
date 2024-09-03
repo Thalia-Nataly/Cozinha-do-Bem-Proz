@@ -24,121 +24,271 @@ body {
 /*----------------------------------------------------------------*/
 
 /*PRODUTOS */
-/* Cabeçalho */
-
+/* Estilo do Main */
 main {
-
     margin-top: 60px;
 }
 
 .main-content {
-    width: 1000%;
+    width: 1000px; 
     max-width: 1000px;
     margin: 0 auto;
     padding: 80px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(122, 223, 189, 0.153);
     border-radius: 8px;
-    border: transparent;
 }
 
 .main-content h1 {
     margin-bottom: 20px;
     padding: 50px;
-
-}
-
-.main-content h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 .main-content p {
     margin-bottom: 20px;
 }
 
-.main-content ul {
+.centralize-text {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+/* Estilo para a seção de filtros */
+.filter-container {
+    display: flex; /* Alinha os botões lado a lado */
+    gap: 35px; /* Espaçamento entre os botões */
+    margin: 50px 0; /* Margem acima e abaixo dos filtros */
+    justify-content: center; /* Alinha os botões no centro */
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas menores */
+}
+
+.filter-option {
+    background-color: rgba(122, 223, 189, 0.153);
+    border: 2px solid #038d5a27;
+    color: #1b6cc9; /* Cor do texto do botão */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 309px; /* Largura dos botões */
+    height: 100px; /* Altura dos botões */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1.1em; /* Tamanho da fonte do botão */
+    display: flex; /* Flexbox para centralizar o texto */
+    align-items: center; /* Alinha o texto verticalmente */
+    justify-content: center; /* Alinha o texto horizontalmente */
+    cursor: pointer; /* Cursor de ponteiro para indicar que o botão é clicável */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para cor de fundo e texto */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+.filter-option:hover {
+    background-color: #026d4f; /* Cor de fundo quando o mouse passa sobre o botão */
+    color: #ffffff;
+}
+
+
+/* Estilo para as seções de produtos */
+.category {
+    display: none; /* Oculta todas as seções por padrão */
+    padding: 20px;
+    border-top: 2px solid #038d5a;
+}
+
+.category.active {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    gap: 20px; /* Espaço entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo para as caixas de itens */
+.item-box {
+    background-color: #f9f9f9; /* Cor de fundo da caixa */
+    border: 1px solid #ddd; /* Borda da caixa */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px; /* Espaço interno da caixa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra da caixa */
+    display: flex; /* Flexbox para layout interno */
+    flex-direction: column; /* Layout vertical dos elementos */
+    align-items: center; /* Centraliza o conteúdo */
+    text-align: center; /* Centraliza o texto */
+    max-width: 300px; /* Limita a largura máxima das caixas */
+
+    /* Remover a largura fixa para permitir que o Flexbox ajuste o tamanho */
+    width: calc((100% / 3) - 20px); /* Ajusta a largura para caber 3 caixas por linha, descontando o espaçamento */
+    
+}
+
+.imageprod {
+    width: 150px; /* Largura */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+.item-box h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.item-box p {
     margin-bottom: 20px;
 }
 
-.main-content ul li {
+/* Estilo para os controles de quantidade */
+.quantity-controls {
+    display: flex; /* Alinha os botões e o campo de entrada horizontalmente */
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-controls button {
+    background-color: #038d5a;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.quantity-controls button:hover {
+    background-color: #026d4f;
+}
+
+.quantity-controls input {
+    width: 60px;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fff;
+    cursor: default;
+}
+
+/* Estilo para os preços */
+.price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+
+/* Estilo para a Table de PRODUTOS */
+.table-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: rgba(122, 223, 189, 0.153);
+    width: 80%; /* Define a largura do contêiner como uma porcentagem da largura do elemento pai */
+    max-width: 999px; /* Define uma largura máxima para o contêiner */
+    margin-left: auto; /* Adiciona margem automática à esquerda */
+    margin-right: auto; /* Adiciona margem automática à direita */
+}
+
+#items-table {
+    width: 100%; /* Ajusta a tabela para ocupar toda a largura do contêiner */
+    border-collapse: collapse;
+}
+
+#items-table th, #items-table td {
+    border: 8px solid rgba(122, 223, 189, 0.153);
+    padding: 15px;
+    text-align: left;
+}
+
+#items-table th {
+    background-color: rgba(122, 223, 189, 0.153);
+}
+
+/* Estilo para o formulário de PRODUTOS */
+.form-container-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: none; /* Oculta o formulário por padrão */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+form {
+    width: 100%;
+}
+
+label, input, select, button {
+    display: block;
+    width: 100%;
     margin-bottom: 10px;
 }
 
-.main-content img {
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para o botão de exibição do formulário */
+.show-form-btn {
     display: block;
-    margin: 10px 0;
+    width: auto;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #7adfbf; /* Cor de fundo para o botão */
+    color: #fff; /* Cor do texto */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.show-form-btn:hover {
+    background-color: #62b7a6; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para ocultar o formulário inicialmente */
+.form-container-wrapper {
+    display: none;
 }
 
 
-
-/* Main */
-.content-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    max-width: 1000px;
-    margin-bottom: 50px;
-    padding: 20px;
-    justify-content: space-between;
+/* Estilo do botão voltar ao topo */
+.back-to-top {
+    display: none; /* Esconde o botão por padrão */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #038d5a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
 }
 
-.text-box1 .text-box2 .text-box3 {
-    border-radius: 8px;
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 2000px;
-    height: 650px;
-}
-
-.text-box1 {
-    background-color: #aae5e8;
-    flex: 1;
-}
-
-.text-box2 {
-    background-color: #dbaaa3;
-    flex: 1;
-}
-
-.text-box3 {
-    background-color: #f7e7b2;
-    flex: 1;
-}
-
-.image-box {
-    flex: 1;
-    max-width: 98%;
-    height: 300px;
+.back-to-top:hover {
+    background-color: #026d4f;
 }
 
 
+/*FIM PRODUTOS */
 
-.image-box img {
-    width: 98%;
-    height: 98%;
-    border-radius: 8px;
-    box-shadow: #000000;
-    flex-direction: center;
-    
-    
-}
-
-.chips-container {
-    background-color: #aae5e8;
-    border-radius: 1%;
-    
-}
-
-.arroz-container {
-    background-color: #dbaaa3;
-    border-radius: 1%;
-}
-
-.pizza-container {
-    background-color: #f7e7b2;
-    border-radius: 1%;
-}
 
 /*----------------------------------------------------------------*/
 
@@ -960,4 +1110,66 @@ form input label{
     flex-direction: center;
     order: 1;
 
+}
+
+/* POLÍTICA DE COOKIES*/
+/* Estilos para a barra de cookies */
+.cookie-banner {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fica fixo na parte superior da página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8); /* Cor de fundo com transparência */
+    color: #fff; /* Cor do texto */
+    padding: 35px; /* Altura da barra */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar a barra */
+}
+
+.cookie-content {
+    display: flex; /* Alinha os elementos em linha */
+    justify-content: space-between; /* Distribui espaço entre o texto e os botões */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    max-width: 1200px; /* Define uma largura máxima para centralizar o conteúdo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.cookie-text {
+    flex: 1; /* Faz com que o texto ocupe a maior parte do espaço disponível */
+}
+
+.cookie-text h2 {
+    margin: 0 0 5px 0; /* Margem inferior para o título */
+}
+
+.cookie-text p {
+    margin: 0; /* Remove margens ao redor do parágrafo */
+    font-size: 16px;
+}
+
+.cookie-text a {
+    color: #ff9f00; /* Cor do link */
+    text-decoration: underline;
+}
+
+
+
+.cookie-buttons button {
+    background-color: #ff9f00; /* Cor do botão */
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cookie-buttons button:hover {
+    background-color: #e68a00; /* Cor do botão ao passar o mouse */
+}
+
+/* Ajuste de margem para o corpo da página para não sobrepor o conteúdo */
+body {
+    padding-top: 60px; /* Ajuste conforme necessário para o tamanho da barra de cookies */
 }
