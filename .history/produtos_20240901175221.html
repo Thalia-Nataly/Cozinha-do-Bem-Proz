@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="icon" href="Imagens\favicon.jpg" type="image/jpg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/stylegeral.css">
+    <link rel="stylesheet" href="css/responsive.css" media=screen>
+    <!-- JS -->
+    <script src="js/index.js" defer></script>
+    <script src="js/btn-menu-mob.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    
+</head>
+
+<body> 
+    <!-- Botão "Voltar ao topo" -->
+    <a id="top"></a>
+    <!-- Cabeçalho -->
+    <header id="header"> 
+             
+       <div class = "interface">
+    <!-- logo -->
+            <section class="logo">
+                <a href="home.html">
+                <img class= "logo-branca" src="Imagens/logo.jpg" alt="Logo"></a>
+                <img class= "logo-preto" src="Imagens/logobranca.png" alt="Logo">
+            </section>
+    <!--Fim logo -->
+    <!-- Menu -->
+            <section class="menu-desktop">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos</a></li> 
+                    </ul>
+                </nav>
+            </section>
+    <!--Fim menu -->
+    <!-- contato -->
+            <section class="btn-contato">
+                    <a href="contato.html">
+                        <button>Contato</button>
+                    </a>
+            </section>
+     <!--Fim contato -->
+    <!-- Menu responsive -->
+            <div class="btn-menu-mob" id="btn-menu-mob">
+            <div class = "line-menumob-1"></div>
+            <div class = "line-menumob-2"></div>
+            
+            </div>
+            <section class="menu-mobile" id="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos</a></li> 
+                        <li><a href="contato.html">Contato</a></li> 
+                    </ul>
+                </nav>
+            </section>
+    <!-- Fim Menu responsive -->
+        </div> 
+    </header>
+<!--Fim cabeçalho-->
+
+    <!-- Main -->
+<main>
+    <div class="main-content">  
+        <div class="box-conteiners">
+            <div class="box-content">
+                <h1>Nossos produtos</h1>
+                <p><span> Descubra a pureza e o sabor dos nossos produtos orgânicos: cada item é cuidadosamente selecionado para oferecer a você a 
+                    melhor qualidade e frescor. Compre com confiança e apoie práticas sustentáveis que promovem a saúde e o bem-estar de nossa 
+                    comunidade e do planeta.</span></p> 
+            </div>    
+        </div>
+    </div>
+    <div class="centralize-text">
+        <p>Clique <a href="contato.html" class="contact-link">aqui</a> para saber mais sobre nosso projeto, realizar doações de alimentos ou como se tornar um voluntário.</p>
+    </div>
+        
+        <!-- Seção de filtros -->
+        <div class="filter-container">
+            <button class="filter-option" data-category="fruits">Frutas</button>
+            <button class="filter-option" data-category="vegetables">Legumes e Verduras</button>
+            <button class="filter-option" data-category="greens">Vegetais</button>
+        </div>
+
+
+
+        <!-- Seção de categorias -->
+        <div class="category" id="fruits">
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\acai.png" alt="Acai">
+                <h2>Açaí</h2>
+                <p>Rico em antioxidantes, vitaminas e minerais, o açaí é conhecido por suas propriedades anti-inflamatórias e de suporte ao sistema imunológico.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\cacau.png" alt="Cacau">
+                <h2>Cacau</h2>
+                <p>As sementes de cacau são uma excelente fonte de antioxidantes, como flavonoides, e minerais como ferro e magnésio, que ajudam a melhorar a saúde cardiovascular e a função cerebral.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\goji.png" alt="Goji">
+                <h2>Goji Berry</h2>
+                <p>Rica em antioxidantes, vitaminas A e C, e minerais, a goji berry é conhecida por seus potenciais benefícios para a visão, a imunidade e a saúde da pele.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\kiwi.png" alt="Kiwi">
+                <h2>Kiwi</h2>
+                <p>Excelente fonte de vitamina C, vitamina K, e fibras. Seus antioxidantes ajudam a fortalecer o sistema imunológico e a promover a saúde digestiva.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\manga.png" alt="Manga">
+                <h2>Manga</h2>
+                <p>Uma boa fonte de vitaminas A e C, a manga possui propriedades antioxidantes e anti-inflamatórias que ajudam a fortalecer o sistema imunológico e a saúde da pele.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\mirtilo.png" alt="Mirtilo">
+                <h2>Mirtilo (Blueberry)</h2>
+                <p>Com altos níveis de antioxidantes, vitaminas C e K, e fibras, os mirtilos são ótimos para a saúde cardiovascular e a função cognitiva.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\roma.png" alt="Roma">
+                <h2>Romã</h2>
+                <p>Rica em antioxidantes, como polifenóis, e com propriedades anti-inflamatórias, a romã pode ajudar na saúde do coração e na prevenção de doenças crônicas.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\morango.png" alt="Morango">
+                <h2>Morango</h2>
+                <p>Os morangos são ricos em vitamina C, antioxidantes e fibras, e ajudam a promover a saúde do coração, melhorar a função cognitiva e combater a inflamação.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\uva.png" alt="Uva">
+                <h2>Uva</h2>
+                <p>Contém antioxidantes, como resveratrol, e é uma boa fonte de vitaminas C e K. As uvas podem ajudar a melhorar a saúde cardiovascular e a função cognitiva.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        </div>
+        
+
+
+
+        <div class="category" id="vegetables">
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\couve.jpg" alt="Couve">
+                <h2>Couve</h2>
+                <p>Verdura de folhas verdes escuras com sabor amargo. Nutritiva, fornecendo vitaminas A, C e K, além de cálcio e ferro. Usada crua, refogada ou em sopas.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\ervilha.jpg" alt="Ervilha">
+                <h2>Ervilha</h2>
+                <p>Pequenas leguminosas com textura macia e sabor adocicado. Ricas em vitaminas C e K, fibras e proteínas vegetais. Usadas em sopas, saladas e acompanhamentos.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\feijao.jpg" alt="Feijao">
+                <h2>Feijão</h2>
+                <p>Leguminosa rica em proteínas, fibras, ferro e vitaminas do complexo B. Variedades incluem feijão preto, carioca e vermelho. Usado em sopas, pratos principais e saladas.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\grao.jpg" alt="Grao">
+                <h2>Grão-de-bico</h2>
+                <p>Leguminosa rica em proteínas, fibras, ferro e magnésio. Base para hummus e usada em saladas e curries. Ajuda na regulação do açúcar no sangue e saúde do coração.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\lentilha.jpg" alt="Lentilha">
+                <h2>Lentilha</h2>
+                <p>Pequenas leguminosas ricas em proteínas vegetais, fibras, ferro e ácido fólico. Cozinha rapidamente e é versátil em sopas e saladas.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\nabo.png" alt="Nabo">
+                <h2>Nabo</h2>
+                <p>Legume com sabor ligeiramente picante e textura crocante. Rico em vitaminas C e B6, além de fibras e minerais. Usado em sopas, ensopados e saladas.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\rucula.png" alt="Rucula">
+                <h2>Rúcula</h2>
+                <p>Verdura com sabor picante e textura crocante. Rica em vitaminas A, C e K, cálcio e antioxidantes. Usada em saladas e sanduíches.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\salsa.jpg" alt="Salsa">
+                <h2>Salsa</h2>
+                <p>Verdura com folhas verde-escuras e sabor fresco e levemente picante. Rica em vitaminas A, C e K, além de ferro e antioxidantes. Usada como tempero ou em saladas.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\espinafre.png" alt="Espinafre">
+                <h2>Espinafre</h2>
+                <p>Verdura de folhas verdes escuras, rica em vitaminas A, C e K, ferro e antioxidantes. Usada crua em saladas ou cozida em diversos pratos.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        </div>
+
+
+
+        <div class="category" id="greens">
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\abobrinha.jpg" alt="Abobrinha">
+                <h2>Abobrinha</h2>
+                <p>Baixa em calorias e rica em vitaminas A e C, além de minerais como potássio. A abobrinha ajuda a promover a saúde digestiva, melhorar a saúde da pele e fornecer nutrientes essenciais.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\batatad.jpg" alt="Batatad">
+                <h2>Batata-doce</h2>
+                <p>Rica em beta-caroteno, vitaminas A e C, e fibras. A batata-doce pode ajudar a melhorar a saúde ocular, fortalecer o sistema imunológico e promover uma digestão saudável.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\beterraba.png" alt="Beterraba">
+                <h2>Beterraba</h2>
+                <p>Rica em vitaminas e minerais como ferro, potássio e ácido fólico. A beterraba é conhecida por suas propriedades antioxidantes e anti-inflamatórias, e pode ajudar a melhorar a saúde cardiovascular e a função cognitiva.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\brocolis.jpg" alt="Brocolis">
+                <h2>Brócolis</h2>
+                <p>Fonte de vitaminas C e K, além de fibras e antioxidantes como sulforafano. O brócolis pode ajudar na prevenção de câncer, melhorar a saúde óssea e fortalecer o sistema imunológico.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\cenoura.jpg" alt="Cenoura">
+                <h2>Cenoura</h2>
+                <p>Rica em beta-caroteno (que se converte em vitamina A), as cenouras são benéficas para a saúde dos olhos, a imunidade e a saúde da pele.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\pepino.png" alt="Pepino">
+                <h2>Pepino</h2>
+                <p>Com alto teor de água e baixo em calorias, o pepino é ótimo para hidratação, e suas vitaminas e minerais ajudam a promover a saúde da pele e a digestão.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\pimentao.jpg" alt="Pimentao">
+                <h2>Pimentão</h2>
+                <p>Fonte rica de vitaminas A e C e antioxidantes como beta-caroteno e flavonoides. Os pimentões ajudam a fortalecer o sistema imunológico, melhorar a saúde da pele e proteger contra doenças crônicas.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\repolho.jpg" alt="Repolho">
+                <h2>Repolho</h2>
+                <p>Rico em vitaminas C e K, e com propriedades antioxidantes e anti-inflamatórias. O repolho pode ajudar na digestão, promover a saúde cardiovascular e fortalecer o sistema imunológico.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        
+            <div class="item-box">
+                <img class="imageprod" src="Imagens\tomate.png" alt="Tomate">
+                <h2>Tomate</h2>
+                <p>Rico em licopeno, um potente antioxidante, e em vitaminas C e K. Os tomates são conhecidos por seus benefícios à saúde do coração e à prevenção de certos tipos de câncer.</p>
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <input type="number" class="quantity" value="0" readonly>
+                    <button class="increment">+</button>
+                </div>
+                <p class="price".>15,00</p>
+            </div>
+        </div>   
+
+        
+            <!-- Tabela para exibir o total de itens -->
+        <div class="table-container">
+            <h2>Itens escolhidos</h2>
+            <table id="items-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Produto</th>
+                        <th>Total de Itens</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As linhas serão adicionadas dinamicamente pelo JavaScript -->
+                </tbody>
+            </table>
+
+            <!-- Botão para mostrar o formulário -->
+            <button id="show-form-btn">Quero fazer meu pedido</button>
+        
+ 
+
+        <!-- Formulário -->
+        <div class="form-container-wrapper" id="form-container" style="display: none;">
+            <div class="form-container">
+                <form>
+                    <h3>Gostaria de comprar ou fazer uma doação?</h3>
+                    <p>Informe seus dados no formulário abaixo. Seu pedido será enviado para um de nossos atendentes e em logo entraremos em contato com você!</p>
+                    <label for="nome">Nome: </label>
+                    <input required type="text" name="nome" id="nome" >
+
+                    <label for="email">E-mail: </label>
+                    <input required type="email" name="email" id="email" >
+
+            <label for="tel">WhatsApp: </label>
+            <input type="tel" name="tel" id="tel" required>
+
+                    <label for="contact-preference">Qual forma de contato você prefere?</label>
+                    <select id="contact-preference" name="contact-preference" required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="call">Ligação</option>
+                        <option value="whatsapp">Mensagem no WhatsApp</option>
+                    </select>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <nav>
+            <div class="social-links">
+                <a href="home.html">
+                    <img src="Imagens/logo.jpg" alt="logo"></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagens/social_13051757.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagens/instagram_4494489.png" alt="Instagram"></a>
+                <a href="https://wa.me/5544332156489" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagens/whatsapp_2504845.png" alt="Whatsapp"></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagens/youtube_4494485.png" alt="Youtube"></a>
+            </div>
+            <p class="copyright">© 2024 Cozinha do Bem - Todos os direitos reservados.</p> 
+        </nav>
+    </footer>
+    <a href="#top" class="back-to-top">Voltar ao topo</a>
+</body>
+</html>
+
