@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Preços dos produtos
     const prices = {
-        "Açaí": 15.00,
+        "Açaí": 13.50,
         "Cacau": 20.00,
         "Goji Berry": 25.00,
         "Kiwi": 18.00,

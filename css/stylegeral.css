@@ -66,7 +66,7 @@ main {
 .filter-option {
     background-color: rgba(122, 223, 189, 0.153);
     border: 2px solid #038d5a27;
-    color: #1b6cc9; /* Cor do texto do botão */
+    color: #000000; /* Cor do texto do botão */
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 309px; /* Largura dos botões */
     height: 100px; /* Altura dos botões */
@@ -196,6 +196,43 @@ main {
     border-collapse: collapse;
 }
 
+
+
+/* Estilo para o botão na tabela */
+#show-form-btn {
+    width: 300px; /* Ajuste a largura conforme necessário */
+    height: 50px; /* Ajuste a altura conforme necessário */
+    padding: 10px; /* Ajuste o padding, se necessário */
+    font-size: 16px;
+    background-color: #fff; /* Cor de fundo do botão */
+    color: #000000; /* Cor do texto */
+    border: 1px solid #038d5a; /* Borda do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    text-align: center;
+    display: flex; /* Alinha o conteúdo no centro do botão */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+}
+
+#show-form-btn:hover {
+    background-color: #026d4f; /* Cor de fundo ao passar o mouse */
+    color: #ffffff;
+}
+
+/* Se precisar ajustar a célula da tabela que contém o botão */
+#items-table td {
+    text-align: center; /* Centraliza o botão dentro da célula */
+}
+
+/* Estilo para o container do botão */
+.button-container {
+    display: flex; /* Usa Flexbox para centralizar o botão */
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    margin-top: 20px; /* Espaço acima do botão, se necessário */
+}
+
+
 #items-table th, #items-table td {
     border: 8px solid rgba(122, 223, 189, 0.153);
     padding: 15px;
@@ -209,24 +246,31 @@ main {
 /* Estilo para o formulário de PRODUTOS */
 .form-container-wrapper {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1000px;  /* Largura máxima do contêiner */
     margin: 0 auto;
     padding: 20px;
     display: none; /* Oculta o formulário por padrão */
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    height: 100vh; /* Ocupa a altura total da página */
+
+  
 }
 
 .form-container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1000px; /* Largura máxima do formulário */
     margin: 0 auto;
     padding: 80px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
+    transform: translateX(-80px); /* Ajuste o valor conforme necessário */
 }
 
 form {
-    width: 100%;
+    width: 100%; /* O formulário ocupa toda a largura do contêiner */
 }
 
 label, input, select, button {
@@ -257,11 +301,6 @@ input, select {
 
 .show-form-btn:hover {
     background-color: #62b7a6; /* Cor de fundo ao passar o mouse */
-}
-
-/* Estilo para ocultar o formulário inicialmente */
-.form-container-wrapper {
-    display: none;
 }
 
 
@@ -680,94 +719,10 @@ section.hero-site {
 }
 /* ---------------FIM Hero-site*- HOME ---------------*/
 
-/* Container principal dos produtos */
-.content-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que as colunas se movam conforme necessário */
-    gap: 20px; /* Espaçamento entre colunas e produtos */
-    justify-content: center; /* Centraliza as colunas */
-    align-items: flex-start;
-    max-width: 1000px; /* Largura máxima para o container */
-    margin: 0 auto 50px; /* Centraliza o container e adiciona margem inferior */
-    padding: 20px;
-}
 
-/* Coluna de produtos */
-.product-column {
-    flex: 1; /* Faz com que cada coluna tenha a mesma largura */
-    min-width: calc(33.33% - 20px); /* Garante que as colunas tenham o mesmo tamanho e se ajustem ao espaço disponível */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
-}
 
-/* Caixa de produto */
-.product {
-    display: flex; /* Ativa o Flexbox */
-    flex-direction: column; /* Alinha os itens na vertical */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    background-color: rgba(122, 223, 189, 0.153);
-    border: 2px solid #038d5a27;
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 15px; /* Espaço interno */
-    box-sizing: border-box;
-    margin-bottom: 20px; /* Espaço entre produtos */
-    text-align: center; /* Centraliza o texto e a imagem */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para a caixa de produto */
-    height: 300px; /* Altura fixa para todas as caixas de produto */
-}
+/* ---------------INÍCIO  CONTATO ---------------*/
 
-/* Imagem do produto */
-.product img {
-    width: 100%; /* Imagem ocupa toda a largura da caixa */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Cantos arredondados na imagem */
-    object-fit: cover; /* Faz com que a imagem cubra a caixa sem distorcer */
-}
-
-/* Títulos dos produtos */
-.product h2 {
-    margin: 10px 0; /* Espaço acima e abaixo do título */
-    font-size: 1.2em; /* Tamanho do texto do título */
-}
-
-/* Descrições dos produtos */
-.product p {
-    margin: 0; /* Remove margem da descrição */
-    font-size: 0.9em; /* Tamanho do texto da descrição */
-    color: #666; /* Cor do texto da descrição */
-}
-
-.centralize-text {
-    text-align: center;
-    margin: 20px auto;
-    font-size: 18px;
-}
-
-.image-box {
-    flex: 1;
-    max-width: 98%;
-    height: 300px;
-}
-
-.image-box img {
-    width: 98%;
-    height: 98%;
-    border-radius: 8px;
-    box-shadow: #000000;
-    flex-direction: center;
-}
-
-/* Contêiner do formulário para alinhamento com as colunas */
-.form-container-wrapper {
-    width: 100%;
-    max-width: 1000px; /* Deve corresponder à largura total das três colunas */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 20px;
-}
-
-/* FIM Container principal dos produtos */
-
-/* C O N T A T O    P Á G I N A   I N Í C I O*/
 /* Contêiner principal de contato */
 .contact-container {
     display: flex;
@@ -804,14 +759,14 @@ section.hero-site {
 }
 
 
-/* Box telefone */
+/* Box de todos os itens */
 .phone-box {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* ícone telefone */
+/* Tamanho de todos os ícones */
 .contact-icon {
     width: 50px; /* Ajustar tamanho */
     height: auto;
@@ -897,120 +852,6 @@ form input label{
 
 /*----------------------------------------------------------------*/
 
-/* Style para o formulário */
-
-/* Formulário produto*/
-.form-container-wrapper{
-        width: 100%;
-        display: flex;
-        
-        background-color: #000000;
-        margin: auto 0;
-       
-       
-        
-}
-.form-prodcontainer {
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
-    padding: 0px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgba(122, 223, 189, 0.153);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column; /* Alinha os elementos internamente */
-    align-items: center; /* Centraliza o conteúdo dentro do contêiner */
-    
-    
-}
-.form-container {
-    width: 50%;
-    height: auto; /* Altura do conteúdo */
-    background-color: rgba(122, 223, 189, 0.153);
-    border: 2px solid #038d5a27;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 0px;
-    display: flex;
-    flex-direction: center;
-    
-}
-.input label
- {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    align-self: center;
-    padding: 10px;
-    align-self: center;
-}
-
-.input input,
-.input select,
-.input textarea
-{
-    display: block;
-    width: 97%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #cccccc; /* Cor da borda dos campos */
-    box-sizing: border-box;
-}  
-
-.button button{
-    height:auto;
-    background-color: #0471119d;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    display: block;
-    width: 97%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 4px;
-    box-sizing: border-box;   
-}
-
-.button button:hover{
-    background-color: #047110; 
-}
-/*----------------------------------------------------------------*/
-
-/* Style dos campos de entrada e botão dentro do form */
-.form-container input,
-.form-container select,
-.form-container button 
-.form-prodcontainer input,
-.form-prodcontainer select
-{
-    display: block;
-    width: 97%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #cccccc; /* Cor da borda dos campos */
-    box-sizing: border-box;
-}
-
-
-/* Estilo do botão dentro do form */
-.form-container button 
-.form-prodcontainer  button {
-    background-color: #ffffff;
-    color: #047110;
-    border: none;
-    cursor: pointer;
-    border: 2px solid #00000027;
-}
-
-.form-container button:hover 
-.form-prodcontainer form button:hover {
-    background-color: #047110;
-    color: #ffffff;
-}
 
 
 
