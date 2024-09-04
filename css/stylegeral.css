@@ -1017,3 +1017,7 @@ form input label{
 body {
     padding-top: 60px; /* Ajuste conforme necessário para o tamanho da barra de cookies */
 }
+
+a {
+    text-decoration: none !important;
+}
